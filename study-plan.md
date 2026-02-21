@@ -52,10 +52,11 @@ Phase 6:  [ ] Day 39 [ ] Day 40 [ ] Day 41 [ ] Day 42
 ### Day 1 -- Welcome + Java Setup
 
 > **Objectives -- by the end of today you should be able to:**
-> - Install JDK 21 and verify the installation from the command line (`java -version`, `javac -version`)
-> - Explain the difference between JDK, JRE, and JVM
-> - Compile and run a Java program from both the terminal and an IDE
-> - Describe the high-level structure of the 1Z0-830 exam (topics, question count, passing score)
+> - Describe the 1Z0-830 exam structure (50 questions, 120 min, 68% to pass) and the topics the course will cover
+> - Use `System.out.print`, `System.out.println`, and `System.out.printf` with format specifiers (`%d`, `%s`, `%n`)
+> - Read user input with the `Scanner` class using `nextInt()`, `next()`, and `nextLine()`, and explain when to call `close()`
+> - Write single-line (`//`), multi-line (`/* */`), and Javadoc (`/** */`) comments and explain their purpose
+> - Explain the Java platform concepts: JDK vs JRE vs JVM, bytecode, and "write once, run anywhere"
 
 **Watch (~53 min):**
 - Module 01 -- Introduction to Java SE 21 Developer Certification Course (3 min)
@@ -83,10 +84,11 @@ System.out.println("Java version: " + System.getProperty("java.version"));
 ### Day 2 -- Java Environment (finish)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Declare and initialize variables of different types, including `var` for local variable type inference
-> - Read user input with `Scanner` and produce formatted output with `System.out`
-> - Explain what the classpath is and how Java resolves classes at compile time and runtime
-> - Identify where `var` can and cannot be used (fields, method parameters, return types)
+> - Perform widening (automatic) and narrowing (explicit) type conversions and state the size order: `byte` < `short` < `int` < `long` < `float` < `double`
+> - Predict data loss when narrowing (e.g., `double` to `long` to `byte`) and fix compiler errors with explicit casts
+> - Set up IntelliJ IDEA Community, create a Java project with JDK 21, and navigate the IDE (project tree, editor, Run/Debug)
+> - Write, compile, and run a Hello World program; explain the flow: `.java` -> `javac` -> `.class` (bytecode) -> JVM -> output
+> - Explain every part of `public static void main(String[] args)` including access modifier, `static`, return type, and command-line arguments
 
 **Watch (~48 min):**
 - Module 02 -- Introduction to Java and Environment Setup -- second half (~48 min)
@@ -112,10 +114,10 @@ var price = 19.99;       // double inferred
 ### Day 3 -- Java Basics (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - List all 8 Java primitive types with their sizes and default values
-> - Distinguish between widening (implicit) and narrowing (explicit) type conversions
-> - Write valid numeric literals using binary, octal, hex, and underscore notation
-> - Predict whether a given assignment compiles based on type conversion rules
+> - Use `print`, `println`, and `printf` with format specifiers (`%d`, `%s`, `%n`) and `String.format` to produce formatted output
+> - Read input with `Scanner` and explain the difference between `next()` (single token, stops at space) and `nextLine()` (full line)
+> - Write all three comment types (single-line, multi-line, Javadoc) and use Javadoc to document methods with `@param` and `@return`
+> - Recall the section roadmap: output, input, comments, variables, data types, numbers, type conversion
 
 **Watch (~44 min):**
 - Module 03 -- Basics of Java -- first half (~44 min)
@@ -147,10 +149,12 @@ double z = x;     // yes -- widening
 ### Day 4 -- Java Basics (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Apply type promotion rules to predict the result type of arithmetic expressions involving `byte`, `short`, `char`, and `int`
-> - Explain integer overflow behavior and predict the result of `Integer.MAX_VALUE + 1`
-> - Identify valid and invalid uses of underscores in numeric literals
-> - Perform `char` arithmetic and convert between `char` and `int` values
+> - Declare and initialize variables using correct naming rules (case-sensitive, starts with letter/`$`/`_`, no keywords) and follow camelCase convention
+> - Distinguish between instance variables, static variables, and local variables and state where each is declared
+> - List all 8 primitive types with their sizes and value ranges, and explain String immutability
+> - Write numeric literals with suffixes (`L` for long, `F` for float) and underscores, and identify invalid underscore placements (start, end, next to decimal point)
+> - Convert between decimal and binary/octal/hex both manually and using `Integer.toBinaryString()`, `toOctalString()`, `toHexString()`
+> - Perform widening (automatic) and narrowing (explicit cast) type conversions and predict data loss (e.g., `double` -> `long` -> `byte`)
 
 **Watch (~43 min):**
 - Module 03 -- Basics of Java -- second half (~43 min)
@@ -192,10 +196,11 @@ int million = 1_000_000;        // valid
 ### Day 5 -- Operators (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Evaluate complex expressions by hand using Java operator precedence and associativity rules
-> - Predict the output of code using pre-increment (`++x`) and post-increment (`x++`) operators
-> - Explain why compound assignment operators (`+=`, `-=`) include an implicit cast
-> - Use bitwise operators (`&`, `|`, `^`, `~`) on integer values
+> - Distinguish between operators and operands and identify the result type of arithmetic expressions
+> - Use all five arithmetic operators (`+`, `-`, `*`, `/`, `%`) and explain `+` for string concatenation vs numeric addition
+> - Apply compound assignment operators (`+=`, `-=`, `*=`, `/=`, `%=`) and trace variable values step by step
+> - Use unary operators (`+`, `-`, `++`, `--`, `!`) and predict output differences between prefix (`++x`) and postfix (`x++`)
+> - Evaluate equality (`==`, `!=`) and relational (`>`, `<`, `>=`, `<=`) expressions and state that the result is always `boolean`
 
 **Watch (~43 min):**
 - Module 04 -- Operators -- first half (~43 min)
@@ -237,10 +242,12 @@ int j = i++ + ++i + i-- + --i;  // trace through step by step
 ### Day 6 -- Operators (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Predict which side of a short-circuit operator (`&&`, `||`) is evaluated and identify side-effect traps
-> - Determine the result of `instanceof` checks, including with `null` values
-> - Use pattern matching with `instanceof` to cast and bind a variable in one step
-> - Resolve operator precedence puzzles combining arithmetic, relational, and logical operators
+> - Use short-circuit `&&` (AND) and `||` (OR) and predict which operand is skipped when the result is already determined
+> - Write ternary expressions (`condition ? valueIfTrue : valueIfFalse`) as shorthand for `if/else`
+> - Apply bitwise (`&`, `|`, `^`, `~`) and bitshift (`<<`, `>>`) operators on integers and verify results with `Integer.toBinaryString()`
+> - Explain the `char` data type as an integer (0-65535), perform `char` arithmetic (e.g., `'A' + 3`), cast between `char` and `int`, and use `Character.isLetter()`/`isDigit()`
+> - Evaluate complex expressions by hand using the operator precedence table (multiplicative before additive, unary before binary) and use parentheses to override order
+> - Distinguish between expressions, statements (end with `;`), and blocks (`{ }`)
 
 **Watch (~42 min):**
 - Module 04 -- Operators -- second half (~42 min)
@@ -280,11 +287,12 @@ int result3 = (2 + 3) * (4 - 1);   // 5 * 3 = 15
 ### Day 7 -- Arrays + Wrapper Classes
 
 > **Objectives -- by the end of today you should be able to:**
-> - Declare, instantiate, and initialize single- and multi-dimensional arrays (including ragged arrays)
-> - Use `Arrays.sort`, `Arrays.binarySearch`, `Arrays.copyOf`, and `Arrays.toString`
-> - Explain autoboxing and unboxing between primitives and their wrapper classes
-> - Identify the `Integer` cache range (-128 to 127) and predict `==` vs `.equals()` behavior on boxed values
-> - Recognize that unboxing a `null` wrapper throws `NullPointerException`
+> - Declare arrays using both `type[] name` and `type name[]` syntax, instantiate with `new`, initialize with `{ }` literals, and state default values for unassigned elements (`0` for numeric, `null` for reference)
+> - Access elements by zero-based index, use `array.length`, and explain `ArrayIndexOutOfBoundsException`
+> - Sort arrays with `Arrays.sort()` (lexicographic for `String`, ASCII for `char`) and search sorted arrays with `Arrays.binarySearch()` (interpret the negative return value `-(insertion point) - 1`)
+> - Create 2D and 3D arrays and work with jagged arrays (rows of different lengths)
+> - Explain why wrapper classes exist (collections require objects), convert between primitives and wrappers using `valueOf()` and `intValue()`/`doubleValue()`
+> - Define autoboxing (primitive -> wrapper) and unboxing (wrapper -> primitive) and predict `NullPointerException` when unboxing a `null` wrapper
 
 **Watch (~1 h 19 min):**
 - Module 05 -- Array (1 h 06 min)
@@ -342,10 +350,12 @@ Integer val = null;
 ### Day 8 -- Control Flow (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Write correct `if/else` chains and identify unreachable-code compile errors
-> - Predict the output of a `switch` statement with and without `break` (fall-through behavior)
-> - List which data types are valid in a `switch` statement and which are not (`long`, `float`, `double`, `boolean`)
-> - Use `switch` with `String` and `enum` values
+> - Write `if`, `if-else`, `if-else-if` ladder, and nested `if` statements and predict which branch executes
+> - Explain single-line `if` rules (curly braces optional for one statement only) and the common trap where the second line always runs
+> - Use the ternary operator (`?:`) as shorthand for `if-else`, and predict which branch executes and its side effects
+> - Write `switch-case` statements and list the allowed types (byte, short, int, long, String, enum)
+> - Predict output with and without `break` (fall-through behavior) and group multiple cases sharing one block
+> - Explain the difference between `return` (exits the method) and `break` (exits only the switch) inside a case block
 
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- first third (~1 h 05 min)
@@ -385,10 +395,12 @@ switch (grade) {
 ### Day 9 -- Control Flow (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Write `for`, `while`, and `do-while` loops and explain when each is appropriate
-> - Use the enhanced `for-each` loop on arrays and `Iterable` collections
-> - Apply labeled `break` and labeled `continue` to control nested loop execution
-> - Trace through nested loop code and predict the exact output
+> - Write `for` loops with init/condition/update, declare multiple variables in the init section, and explain loop variable scope
+> - Use nested `for` loops and count total iterations; write infinite loops with `for(;;)`
+> - Write enhanced `for-each` loops (`for (Type item : array)`) and explain the limitation (no index access); use `toCharArray()` to iterate a String
+> - Write `while` loops (condition checked first) and implement a factorial program
+> - Create `while(true)` infinite loops and predict unreachable-code compile errors (with literals, variables, and `final` constants)
+> - Write `do-while` loops (body executes at least once) and implement a "continue or exit" user-input pattern
 
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- second third (~1 h 05 min)
@@ -436,10 +448,11 @@ for (int n : nums) {
 ### Day 10 -- Control Flow (Part 3) + Switch Expressions
 
 > **Objectives -- by the end of today you should be able to:**
-> - Write switch expressions using arrow syntax (`->`) and return values from them
-> - Use `yield` to return a value from a multi-line switch-expression case block
-> - Apply pattern matching in `switch` with type patterns and guarded patterns (`when`)
-> - Explain why switch expressions must be exhaustive and how `default` satisfies that requirement
+> - Use `break` to exit a loop or switch and state where it is valid (only inside loops/switch -- compile error otherwise)
+> - Use `continue` to skip the current iteration and identify the infinite-loop risk when `continue` bypasses the increment
+> - Use `return` to exit a method entirely and predict unreachable-code compile errors for statements after `return`
+> - Write labeled loops (`labelName:` before loop) and use `break label` / `continue label` to control which loop in a nested structure is affected
+> - Implement the Fibonacci series using a `for` loop with variable swapping
 
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- final third (~1 h 05 min)
@@ -494,10 +507,12 @@ String result = switch (obj) {
 ### Day 11 -- Methods
 
 > **Objectives -- by the end of today you should be able to:**
-> - Define overloaded methods and explain how the compiler resolves which overload is called (exact match, then widening, then boxing, then var-args)
-> - Write methods using var-args and state the rules (must be last parameter, only one per method)
-> - Explain why Java is strictly pass-by-value and predict the effect of modifying a primitive vs. an object reference inside a method
-> - Identify valid and invalid method signatures for overloading
+> - Define a method with access modifier, optional specifier (`static`, `final`, `abstract`), return type, name, and parameters
+> - Explain when a method runs (only when called) and when it ends (last statement or `return`)
+> - Distinguish standard library methods (e.g., `Math.min`, `Math.pow`) from user-defined methods and write methods returning void, primitives, or objects
+> - Write var-args methods using `...` syntax and state the rules: must be the last parameter, only one per method, treated as an array inside the method, can accept zero arguments
+> - Write overloaded methods (same name, different parameter types or count) and predict which overload the compiler selects; identify that same name + same parameters = compile error
+> - Use `Math.pow()` to compute exponential values and cast the `double` result to `int`
 
 **Watch (~1 h 00 min):**
 - Module 07 -- Methods (1 h 00 min)
@@ -540,10 +555,11 @@ static void test(Integer a) { System.out.println("Integer"); }
 ### Day 12 -- OOP Concepts (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create classes with fields, methods, and multiple constructors using `this()` chaining
-> - Apply all four access modifiers (`private`, default, `protected`, `public`) and predict visibility across packages
-> - Explain encapsulation and design a class with proper getters/setters
-> - Use `this` to distinguish between instance fields and constructor/method parameters
+> - Explain OOP fundamentals: class as blueprint, object as instance with state (fields), behavior (methods), and identity; create objects with `new`
+> - Describe JVM memory: stack (per-thread, LIFO, local vars/references, `StackOverflowError`) vs heap (shared, objects/instance vars, garbage collected, `OutOfMemoryError`)
+> - Apply all four access modifiers and state their restrictiveness order: `private` > default (package-private) > `protected` > `public`; predict cross-package visibility
+> - Follow Java naming conventions: class = uppercase noun, method = lowercase verb, variable = lowercase camelCase; identify valid/invalid identifiers
+> - Write constructors (same name as class, no return type, overloadable) with `this.field = param`; explain the default no-arg constructor; override `toString()`
 
 **Watch (~1 h 12 min):**
 - Module 08 -- Java Object-Oriented Concept -- first half (~1 h 12 min)
@@ -597,10 +613,12 @@ public class BankAccount {
 ### Day 13 -- OOP Concepts (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Implement single inheritance with `extends` and call parent constructors using `super()`
-> - Describe the full constructor chaining and initialization order (static inits, instance inits, constructors)
-> - Predict compile errors when a parent has no no-arg constructor and the child omits `super(...)`
-> - Build a class hierarchy with at least three levels and trace method resolution
+> - Declare packages with hierarchical dot-separated names, explain source file order (`package` -> `import` -> class), and state that `java.lang` is auto-imported
+> - Use `import pkg.Class` and wildcard `import pkg.*`; resolve name conflicts between packages using fully qualified class names
+> - Use the `static` keyword on variables (one copy per class), methods (called via class name), and blocks (run when class loads); explain why instance members cannot be used directly in a static context
+> - Write `import static` statements to use static members without the class name prefix
+> - Describe static nested classes (access only outer static members) vs inner classes (access all outer members including private) and their different instantiation syntax
+> - Define local inner classes inside a method block and explain that they can access effectively final local variables (JDK 8+)
 
 **Watch (~1 h 12 min):**
 - Module 08 -- Java Object-Oriented Concept -- second half (~1 h 12 min)
@@ -652,10 +670,11 @@ class Rectangle extends Shape {
 ### Day 14 -- OOP Programming (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Define abstract classes and methods, and explain why abstract classes cannot be instantiated
-> - Override methods correctly following the rules: same signature, covariant return type, equal or wider access, same or narrower checked exceptions
-> - Demonstrate polymorphism by assigning a subclass object to a superclass reference and predicting which overridden method executes
-> - Use the `final` keyword on classes, methods, and variables and predict compile-time behavior
+> - Implement inheritance with `extends` and explain single, multi-level, and hierarchical inheritance; state that constructors are not inherited but can be invoked with `super()`
+> - Explain visibility of inherited members: `public`/`protected` always, package-private only in same package, `private` never; `Object` is the root of every class hierarchy
+> - Declare sealed classes with `sealed` + `permits` and state that subclasses must be `final`, `sealed`, or `non-sealed`
+> - Override methods correctly: same name/parameters/return type, access modifier cannot be more restrictive than the superclass method
+> - Use `this` to reference the current instance (fields, methods, constructor) and `super` to access superclass members (fields, methods, constructor)
 
 **Watch (~1 h 11 min):**
 - Module 09 -- Java Object-Oriented Programming -- first third (~1 h 11 min)
@@ -699,10 +718,11 @@ arr[0] = 99;        // OK -- array content can change
 ### Day 15 -- OOP Programming (Part 2) -- Sealed Types + Records
 
 > **Objectives -- by the end of today you should be able to:**
-> - Declare sealed classes and interfaces with `sealed`, `permits`, `final`, and `non-sealed` and explain the rules for permitted subclasses
-> - Create record classes with components and use their auto-generated accessors, `equals`, `hashCode`, and `toString`
-> - Write compact constructors in records for validation logic
-> - List what records can have (static fields, instance methods, interfaces) and cannot have (extra instance fields, class extension)
+> - Use `super.field` to access a shadowed parent variable, `super.method()` to call a parent method, and `super()` to invoke a parent constructor; combine `this` and `super` in constructor chaining
+> - Apply the `final` keyword: `final` class cannot be extended, `final` method cannot be overridden, `final` variable cannot be reassigned (constant)
+> - Declare abstract classes and methods; explain that abstract classes cannot be instantiated but can have constructors and non-abstract methods; state that abstract methods cannot be `final`, `private`, or `static`
+> - Define interfaces with `implements`; explain that interface variables are implicitly `public static final` and methods are implicitly `public abstract`; write `default` and `static` methods with a body (Java 8+)
+> - Implement multiple interfaces in a single class and combine `extends` (one class) with `implements` (multiple interfaces)
 
 **Watch (~1 h 11 min):**
 - Module 09 -- Java Object-Oriented Programming -- second third (~1 h 11 min)
@@ -753,10 +773,12 @@ record Range(int min, int max) {
 ### Day 16 -- OOP Programming (Part 3) -- Pattern Matching
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use pattern matching with `instanceof` to test and cast in a single expression, and explain the scoping rules of the pattern variable
-> - Write pattern matching in `switch` with type patterns, guarded patterns (`when`), and `null` cases
-> - Identify the four types of nested classes (static nested, inner, local, anonymous) and their access rules
-> - Explain why `&&` works with pattern variables in `if` but `||` does not
+> - Explain static polymorphism (method overloading) and dynamic polymorphism (method overriding with superclass reference to subclass object)
+> - Perform implicit upcasting (`Vehicle v = new Car()`) and explicit downcasting with `instanceof` check to avoid `ClassCastException`
+> - Apply encapsulation: private fields with public `getXxx`/`setXxx` getters and setters; design read-only or write-only access patterns
+> - Write anonymous classes (`new Interface() { ... }`) for one-off implementations; state that they cannot define constructors and require effectively final local variables
+> - Declare record classes (`record Name(components)`) and use their generated accessors, `equals`, `hashCode`, `toString`; write compact canonical constructors for validation; list what records can/cannot have
+> - Use `var` for local variable type inference (Java 10) and state its limitations: not for fields, parameters, return types; must be initialized; cannot assign `null` alone; cannot use with lambda or array brackets
 
 **Watch (~1 h 10 min):**
 - Module 09 -- Java Object-Oriented Programming -- final third (~1 h 10 min)
@@ -817,10 +839,11 @@ class Outer {
 ### Day 17 -- Enums + OOP Review
 
 > **Objectives -- by the end of today you should be able to:**
-> - Declare enums with fields, constructors, and methods (including abstract methods with per-constant implementations)
-> - Use `name()`, `ordinal()`, `values()`, and `valueOf()` on enum types
-> - Combine sealed types, records, enums, interfaces, and pattern matching in a single mini-project
-> - Confidently identify OOP-related compile errors in exam-style code snippets
+> - Declare enums as predefined constant sets with UPPERCASE naming and use them in `switch` statements; compare enums with `==`
+> - Use `valueOf(String)` to convert a string to an enum constant and handle `IllegalArgumentException` for invalid input
+> - Define enums with custom values via a private constructor, write a getter to expose the value, and iterate all constants with `values()`
+> - Distinguish `name()` (final, returns constant name) from `toString()` (overridable)
+> - Combine all OOP concepts (inheritance, sealed types, records, enums, interfaces, polymorphism, encapsulation) in a mini-project
 
 **Watch (~18 min):**
 - Module 14 -- Enum Types (18 min)
@@ -911,10 +934,10 @@ enum Operation {
 ### Day 19 -- Strings (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use core `String` methods (`substring`, `indexOf`, `replace`, `strip`, `charAt`, `contains`, `startsWith`) and predict their return values
-> - Explain String immutability and why `s.concat("x")` does not modify `s`
-> - Distinguish between the String pool and heap allocation, and predict `==` vs `.equals()` results
-> - Use `intern()` to place a heap string into the pool
+> - Explain what the `String` class is in Java and how to create String objects (literal vs `new String()`)
+> - Distinguish between the String pool and heap allocation and predict the result of `==` vs `.equals()` on different String references
+> - Explain String immutability: why calling methods like `concat()` does not modify the original String but creates a new object
+> - Use core `String` methods from Part 1: `length()`, `charAt()`, `indexOf()`, `substring()`, `toUpperCase()`, `toLowerCase()`, `trim()`, `contains()` and predict their return values
 
 **Watch (~51 min):**
 - Module 11 -- Strings -- first half (~51 min)
@@ -961,10 +984,11 @@ original = original.concat(" World"); // must reassign
 ### Day 20 -- Strings (Part 2) + Text Blocks
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use `StringBuilder` methods (`append`, `insert`, `delete`, `reverse`, `replace`) and explain why it is mutable
-> - Write text blocks with triple-quote syntax and predict how incidental whitespace is stripped
-> - Explain edge cases: trailing newline presence/absence, and the effect of closing `"""` position
-> - Use `String.formatted()` and `String.format()` with text blocks
+> - Use additional `String` methods from Part 2 and predict their return values
+> - Create `StringBuffer` objects and use `append()` to modify the string in place; explain that StringBuffer is mutable and thread-safe (synchronized)
+> - Create `StringBuilder` objects and explain that it has the same API as StringBuffer but is not synchronized, making it faster
+> - Compare String vs StringBuffer vs StringBuilder on storage (pool vs heap), mutability, performance, and thread safety; state when to use each (StringBuffer for multi-threaded, StringBuilder for single-threaded)
+> - Implement a Reverse String program using `Scanner`, `length()`, `charAt()`, and a loop from end to start
 
 **Watch (~50 min):**
 - Module 11 -- Strings -- second half (~50 min)
@@ -1016,10 +1040,10 @@ String html = """
 ### Day 21 -- Collections (Part 1) -- List and Set
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create mutable lists with `ArrayList` and immutable lists with `List.of()` and `List.copyOf()`
-> - Explain the difference between `HashSet` (unordered) and `TreeSet` (sorted), and when each is appropriate
-> - Implement `Comparable` on a class and use `Comparator.comparing()` to sort collections
-> - Predict `UnsupportedOperationException` when modifying an unmodifiable collection
+> - Describe the Java Collections Framework hierarchy: `Collection` interface with `Set`, `List`, `Queue`, `Deque` children; distinguish interfaces from implementing classes
+> - Explain the `List` interface: ordered, allows duplicates; compare `ArrayList` (fast random access) vs `LinkedList` (fast insert/remove at ends); use type parameters with generics
+> - Create an `ArrayList`, add elements with `add()`, and perform common List operations (get, set, remove, size, contains)
+> - Convert between lists and arrays using `toArray()` (no-arg and with array parameter), `Arrays.asList()`, and `Collections.addAll()`
 
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- first third (~1 h 01 min)
@@ -1071,10 +1095,10 @@ students.sort(Comparator.comparing(Student::name));  // by name
 ### Day 22 -- Collections (Part 2) -- Map and Deque
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use `HashMap` methods: `put`, `putIfAbsent`, `getOrDefault`, `merge`, `compute`, `forEach`
-> - Create immutable maps with `Map.of()` and `Map.ofEntries()`
-> - Use `ArrayDeque` as both a stack (`push`/`pop`/`peek`) and a queue (`offer`/`poll`/`peek`)
-> - Distinguish between `TreeMap` (sorted by key) and `HashMap` (unordered)
+> - Sort an `ArrayList` using `Collections.sort()` for natural (ascending/alphabetical) order
+> - Use the `Comparator` interface to define custom sort orders (e.g., descending) and pass it to the overloaded `Collections.sort(list, comparator)`
+> - Search elements in a sorted `ArrayList` and use `Iterator` / `ListIterator` to traverse a collection one element at a time with `hasNext()`, `next()`, and `remove()`
+> - Explain the `Set` interface: unordered, no duplicates; distinguish `HashSet` (hashing, no order, allows one `null`), `LinkedHashSet` (insertion order), and `TreeSet` (sorted order)
 
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- second third (~1 h 01 min)
@@ -1124,10 +1148,11 @@ Map<String, Long> freq = Arrays.stream(text.split(" "))
 ### Day 23 -- Collections (Part 3) -- Sorting and Advanced Ops
 
 > **Objectives -- by the end of today you should be able to:**
-> - Chain comparators with `Comparator.comparing().thenComparing()` and `reversed()`
-> - Explain the difference between `Collections.unmodifiableList` (view) and `List.copyOf` (independent copy)
-> - Use `Collections` utility methods: `frequency`, `shuffle`, `swap`, `min`, `max`
-> - Resolve the diamond problem with default methods in interfaces using `InterfaceName.super.method()`
+> - Create and use `HashSet`, `LinkedHashSet`, and `TreeSet` in practice and predict element ordering for each
+> - Explain the `Queue` interface (FIFO) and create queues with `PriorityQueue` and `LinkedList`; use `offer()`, `poll()`, and `peek()`
+> - Explain the `Deque` interface (double-ended queue, supports both FIFO and LIFO) and use `ArrayDeque` as both a stack (`push`/`pop`/`peek`) and a queue (`offer`/`poll`/`peek`)
+> - Use the `Map` interface for key-value pairs; distinguish `HashMap` (no order), `LinkedHashMap` (insertion order), and `TreeMap` (sorted by key); state that `Map` is not part of the `Collection` interface
+> - Create `HashMap` instances, add entries with `put()`, retrieve with `get()`, and explain that duplicate keys are not allowed (value is overwritten)
 
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- final third (~1 h 01 min)
@@ -1172,11 +1197,12 @@ class C implements A, B {
 ### Day 24 -- Exception Handling
 
 > **Objectives -- by the end of today you should be able to:**
-> - Draw the exception hierarchy (`Throwable` -> `Error` / `Exception` -> `RuntimeException`) and classify exceptions as checked or unchecked
-> - Write `try/catch/finally`, multi-catch (`catch (A | B e)`), and `try-with-resources` blocks correctly
-> - Identify catch-ordering compile errors (subclass must come before superclass)
-> - Create custom checked and unchecked exceptions and throw them appropriately
-> - Explain that `finally` always executes (except `System.exit`) and can override a `try` block's return value
+> - Explain the `Throwable` hierarchy: `Error` (system-level, unrecoverable: `StackOverflowError`, `OutOfMemoryError`) vs `Exception` (recoverable); classify exceptions as checked (compile-time, e.g., `FileNotFoundException`), unchecked (runtime, e.g., `ArithmeticException`), or user-defined
+> - Write `try/catch` blocks with multiple catch blocks; use multi-catch with `|` (Java 7+) and explain that the exception parameter is effectively final
+> - Explain the `finally` block: always runs for cleanup (e.g., closing connections) whether or not an exception occurs
+> - Use `throw` to explicitly throw an exception and `throws` in a method signature to declare exceptions; call `getMessage()`, `toString()`, and `printStackTrace()` on a caught exception to inspect error details
+> - Create a user-defined exception by extending `Exception` and use it in a practical Bank Account project
+> - Use try-with-resources (`AutoCloseable`) to automatically close resources and explain that resources are closed in reverse declaration order
 
 **Watch (~1 h 01 min):**
 - Module 13 -- Exception Handling in Java (1 h 01 min)
@@ -1270,10 +1296,11 @@ static int test() {
 ### Day 26 -- Lambda Expressions (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Write lambda expressions for the core functional interfaces: `Predicate`, `Function`, `Consumer`, `Supplier`, `UnaryOperator`, `BinaryOperator`
-> - Convert a lambda to each of the four method reference types (static, unbound instance, bound instance, constructor)
-> - Explain what a functional interface is and identify whether a given interface qualifies
-> - Use built-in functional interfaces to filter, transform, and consume data
+> - Define a functional interface as an interface with exactly one abstract method (SAM); identify `Runnable` as a classic example; state that it can also have `default` and `static` methods
+> - Apply the `@FunctionalInterface` annotation and explain that the compiler enforces the single-abstract-method rule when it is present
+> - Explain what a marker interface is and how it differs from a functional interface
+> - Write lambda expressions using the syntax `(parameters) -> body` as a concise replacement for anonymous classes implementing functional interfaces (Java 8)
+> - Use the `Predicate<T>` interface from `java.util.function`: call `test()` to evaluate a boolean condition, and combine it with lambda expressions for filtering logic
 
 **Watch (~45 min):**
 - Module 15 -- Lambda Expression -- first half (~45 min)
@@ -1311,10 +1338,10 @@ names.stream()
 ### Day 27 -- Lambda Expressions (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Compose predicates using `.and()`, `.or()`, and `.negate()`
-> - Chain functions with `.andThen()` and `.compose()` and predict execution order
-> - Explain the "effectively final" rule for local variables captured by lambdas
-> - Write a generic utility method that accepts `Predicate` and `Function` parameters
+> - Use method references (`::` operator) as a more readable alternative to lambda expressions; explain that they refer to an existing method definition directly (Java 8)
+> - Write switch expressions using arrow syntax (`->`) that return a value, eliminating `break` and fall-through (Java 12/14); use `yield` to return a value from a multi-statement case block
+> - Explain the improvements in switch expressions over traditional switch: no fall-through, returns a value, semicolon required at closing brace, and Java 21 further enhancements
+> - Build a Simple Calculator console application using lambda expressions and functional interfaces to perform addition, subtraction, multiplication, and division on user input
 
 **Watch (~45 min):**
 - Module 15 -- Lambda Expression -- second half (~45 min)
@@ -1360,10 +1387,10 @@ static <T, R> List<R> filterAndTransform(
 ### Day 28 -- Stream API (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create streams from collections, arrays, `Stream.of`, `Stream.iterate`, `Stream.generate`, and `IntStream.rangeClosed`
-> - Apply intermediate operations (`filter`, `map`, `flatMap`, `distinct`, `sorted`, `peek`, `limit`, `skip`) and explain that they are lazy
-> - Use `flatMap` to flatten nested collections into a single stream
-> - Build multi-step stream pipelines on a `List` of objects and predict the output
+> - Define a stream as a sequence of elements from a data source (collection, array, file) that does not store data, only performs operations, and can be consumed only once
+> - Create streams from collections using `.stream()` and perform operations on list elements via the Stream API
+> - Use `filter` for conditional element selection and `mapToInt` to convert a stream to an `IntStream`
+> - Apply terminal reduction operations that combine stream contents into a single value: `average()` (with `getAsDouble()`), `sum`, `min`, `max`, `count`
 
 **Watch (~51 min):**
 - Module 16 -- Stream API -- first half (~51 min)
@@ -1422,11 +1449,11 @@ emps.stream()
 ### Day 29 -- Stream API (Part 2) -- Collectors + Parallel
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use terminal operations: `collect`, `reduce`, `forEach`, `count`, `min`, `max`, `findFirst`, `anyMatch`, `allMatch`, `noneMatch`
-> - Apply `Collectors.groupingBy`, `partitioningBy`, `toMap`, `joining`, and `averagingDouble`
-> - Use `reduce` with an identity, accumulator, and combiner
-> - Explain when parallel streams help performance and when they introduce thread-safety risks
-> - Recognize that a stream can only be consumed once
+> - Distinguish `collect` from `reduce`: `collect` mutates/builds a collection (e.g., `List` or `Set`) instead of returning a single value
+> - Use the `filter` + `collect` pattern to gather matching elements into a new list or set
+> - Explain parallel computing: splitting problems into subproblems solved in separate threads, then combining results; describe the Fork/Join framework
+> - Explain thread-safety risks with collections: thread interference and memory consistency errors; state that synchronization wrappers add safety but introduce contention
+> - Use parallel streams on non-thread-safe collections safely (as long as the collection is not modified during processing)
 
 **Watch (~50 min):**
 - Module 16 -- Stream API -- second half (~50 min)
@@ -1484,10 +1511,10 @@ long sumParallel = LongStream.rangeClosed(1, 1_000_000)
 ### Day 30 -- Date and Time (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create and manipulate `LocalDate`, `LocalTime`, `LocalDateTime`, `ZonedDateTime`, and `Instant` objects
-> - Explain that all `java.time` classes are immutable: manipulation methods return new objects
-> - Compare dates/times using `isBefore`, `isAfter`, `isEqual`, and `ChronoUnit.between`
-> - Handle daylight saving time edge cases with `ZonedDateTime`
+> - Use the legacy `Calendar` class: obtain an instance with `Calendar.getInstance()` and extract fields with `calendar.get(Calendar.YEAR)`, `.MONTH`, `.WEEK_OF_YEAR`, `.DAY_OF_MONTH`, etc.
+> - Create `LocalDate` objects (`java.time`): immutable, date-only (year-month-day), no time or timezone, ISO-8601, thread-safe; use `LocalDate.now()`, `getYear()`, `getMonth()`
+> - Create `LocalTime` objects (`java.time`): immutable, time-only (hour-minute-second), no date or timezone, ISO-8601, thread-safe, no public constructor, static factory methods
+> - Explain that all `java.time` classes are immutable and final with no public constructors -- instances are created via static factory methods
 
 **Watch (~45 min):**
 - Module 17 -- Date & Time -- first half (~45 min)
@@ -1532,10 +1559,11 @@ ZonedDateTime afterDST = beforeDST.plusHours(1);
 ### Day 31 -- Date and Time (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use `Period` for date-based amounts and `Duration` for time-based amounts, and explain why they cannot be mixed
-> - Format and parse date-time objects using `DateTimeFormatter.ofPattern()` and predefined formatters
-> - Convert between time zones using `ZonedDateTime.withZoneSameInstant()`
-> - Predict runtime exceptions when applying `Period` to `LocalTime` or `Duration` to `LocalDate`
+> - Create `LocalDateTime` objects (`java.time`): combination of `LocalDate` and `LocalTime`, date + time without timezone, immutable, thread-safe, static factory methods
+> - Use the `Period` class to represent a date-based amount of time in years, months, and days; create with `Period.of()` and `Period.between()`; apply to `LocalDate` for date arithmetic
+> - Use the `Duration` class to represent a time-based amount in hours, minutes, seconds, and nanos; explain that `Duration` works with `LocalTime`/`LocalDateTime`/`Instant` but NOT with `LocalDate`
+> - Format and parse date-time objects using `DateTimeFormatter` with custom patterns (`ofPattern`); use predefined formatters (`ISO_LOCAL_DATE`, `ISO_LOCAL_DATE_TIME`); explain that `DateTimeFormatter` replaces `SimpleDateFormat`
+> - Convert between time zones using `ZonedDateTime.withZoneSameInstant()` and explain DST edge cases (e.g., spring-forward: 2:00 AM does not exist)
 
 **Watch (~44 min):**
 - Module 17 -- Date & Time -- second half (~44 min)
@@ -1592,10 +1620,10 @@ System.out.println("Tokyo:    " + tokyo);
 ### Day 32 -- Java I/O (Part 1)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create `Path` objects with `Path.of()` and `Paths.get()` and use key methods: `getFileName`, `getParent`, `getRoot`, `normalize`, `resolve`, `relativize`
-> - Use `Files` utility methods: `exists`, `isDirectory`, `readAllLines`, `write`
-> - Walk a directory tree with `Files.walk()` and search with `Files.find()` using a `BiPredicate`
-> - Explain the difference between `resolve` (appending) and `relativize` (computing relative path)
+> - Explain Java IO fundamentals: stream-based input/output for file operations (create, write, read, delete); input streams for reading data, output streams for writing data
+> - Use the `OutputStream` abstract class and its subclass `FileOutputStream` to write byte data to files
+> - Use the `InputStream` abstract class and its subclass `FileInputStream` to read byte data from files; list key subclasses (`ByteArrayInputStream`, `ObjectInputStream`)
+> - Distinguish between byte-based streams (`InputStream`/`OutputStream`) that transfer data in bytes and character-based streams introduced later
 
 **Watch (~42 min):**
 - Module 18 -- Java IO -- first third (~42 min)
@@ -1647,10 +1675,10 @@ try (Stream<Path> stream = Files.find(Path.of("."), 10,
 ### Day 33 -- Java I/O (Part 2)
 
 > **Objectives -- by the end of today you should be able to:**
-> - Distinguish between byte streams (`InputStream`/`OutputStream`) and character streams (`Reader`/`Writer`)
-> - Read and write files using `BufferedReader`, `BufferedWriter`, `FileInputStream`, and `FileOutputStream`
-> - Use `PrintWriter` for convenient text output with `println` and `printf`
-> - Draw the I/O class hierarchy and identify which classes are used for buffering, bridging, and formatting
+> - Read from `.txt` files hands-on using `FileInputStream` and print contents to the console
+> - Explain the `Writer` class: character-based output (vs byte-based), supports international characters (introduced in Java 1.1)
+> - Explain the `Reader` class: character-based input, abstract with subclasses `BufferedReader`, `InputStreamReader`, `CharArrayReader`; use `read()` method overloads
+> - Distinguish between byte streams (`InputStream`/`OutputStream` for raw bytes) and character streams (`Reader`/`Writer` for text with character encoding)
 
 **Watch (~42 min):**
 - Module 18 -- Java IO -- second third (~42 min)
@@ -1704,11 +1732,12 @@ try (var pw = new PrintWriter(new FileWriter("log.txt", true))) {
 ### Day 34 -- Java I/O (Part 3) + Thread Basics
 
 > **Objectives -- by the end of today you should be able to:**
-> - Serialize and deserialize Java objects using `ObjectOutputStream` and `ObjectInputStream`
-> - Explain the role of `Serializable`, `serialVersionUID`, and the `transient` keyword (transient fields reset to defaults on deserialization)
-> - Create threads by extending `Thread` and by implementing `Runnable`, and explain why `Runnable` is preferred
-> - Distinguish between `start()` (creates new thread) and `run()` (executes in current thread)
-> - Describe the thread lifecycle: NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED
+> - Copy a file using `FileReader`/`FileWriter` (character-based) and `FileInputStream`/`FileOutputStream` (byte-based)
+> - Explain object serialization (converting an object to a byte stream for storage/transmission) and deserialization (recreating the object from the byte stream)
+> - Use the `transient` keyword to exclude fields from serialization; state that transient fields get their default values on deserialization (e.g., `0` for `int`)
+> - Explain what a thread is; create threads by extending `Thread` (override `run()`) and by implementing `Runnable` (pass to `Thread` constructor, call `start()`)
+> - Distinguish process vs thread: processes have independent memory, threads share memory within a process; explain multithreading benefits
+> - Explain `start()` (creates a new thread and calls `run()`) vs calling `run()` directly (runs in current thread, no parallelism); use `Thread.getState()` to monitor thread states (NEW, RUNNABLE)
 
 **Watch (~1 h 02 min):**
 - Module 18 -- Java IO -- final third (~41 min)
@@ -1765,11 +1794,12 @@ t.start();  // start(), NOT run()!
 ### Day 35 -- Concurrency Core
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use `synchronized` methods and blocks to protect shared mutable state
-> - Create and manage thread pools with `Executors.newFixedThreadPool` and properly shut them down
-> - Submit tasks using `Callable` and retrieve results with `Future.get()`
-> - Coordinate threads using `CountDownLatch`
-> - Use `invokeAll` and `invokeAny` on an `ExecutorService`
+> - Explain synchronization: controlling access to shared resources so only one thread executes a critical section at a time; use the `synchronized` keyword on methods (counter example demonstrating thread interference and its fix)
+> - Explain the `volatile` keyword: ensures a variable is immediately visible to all threads but does not guarantee atomicity
+> - Use the Executor framework: create thread pools with `Executors.newFixedThreadPool()` and schedule tasks with `ScheduledExecutorService` (`newScheduledThreadPool`, delays, fixed intervals)
+> - Use `ConcurrentHashMap` for thread-safe data handling without manual synchronization
+> - Use `Callable` (returns a result, unlike `Runnable`) with `Future.get()` (blocks until result ready); use `AtomicInteger` for lock-free thread-safe counter operations
+> - Coordinate threads with `Semaphore` (permits controlling how many threads access a resource); use `wait()`, `notify()`, `notifyAll()` for inter-thread communication; use `ReentrantLock` with `Condition` for fine-grained control
 
 **Watch (~1 h 31 min):**
 - Module 21 -- Synchronization and Concurrency Control (17 min)
@@ -1830,11 +1860,11 @@ String fastest = executor.invokeAny(tasks);  // first to complete
 ### Day 36 -- Concurrency Advanced
 
 > **Objectives -- by the end of today you should be able to:**
-> - Use `ReentrantLock` with `lock()`/`unlock()` in a `try/finally` pattern and `tryLock()` for non-blocking acquisition
-> - Explain `ReadWriteLock` semantics: multiple concurrent readers OR one exclusive writer
-> - Use `ConcurrentHashMap` and `CopyOnWriteArrayList` and explain their thread-safety guarantees
-> - Use `AtomicInteger` for lock-free thread-safe counter operations
-> - Identify race conditions in given code and propose a fix
+> - Use `ReentrantLock` with explicit `lock()`/`unlock()` and explain fairness (granting locks in request order); use `ReentrantReadWriteLock` for concurrent read access
+> - Use condition variables with `ReentrantLock` for thread signaling beyond `wait`/`notify`
+> - Explain thread-safe collections and blocking queues for safe concurrent data access
+> - Define thread contention (multiple threads competing for the same lock) and deadlocks (two or more threads waiting for each other indefinitely)
+> - Explain thread safety through immutability: immutable objects are inherently thread-safe since their state cannot change after construction
 
 **Watch (~1 h 17 min):**
 - Module 24 -- Locks and Advanced Synchronization (36 min)
@@ -1891,11 +1921,11 @@ counter.compareAndSet(1, 2);  // CAS operation
 ### Day 37 -- Virtual Threads + Performance
 
 > **Objectives -- by the end of today you should be able to:**
-> - Create virtual threads with `Thread.ofVirtual().start()` and `Executors.newVirtualThreadPerTaskExecutor()`
-> - Explain the difference between platform threads (1:1 OS mapping) and virtual threads (many-to-few mapping)
-> - Identify when virtual threads are beneficial (I/O-bound tasks) vs. when they add no value (CPU-bound)
-> - Check if a thread is virtual using `Thread.isVirtual()`
-> - Explain why virtual threads should not be pooled
+> - Explain thread pool optimization: pool of reusable pre-instantiated threads with a task queue, reducing thread creation/destruction overhead for better performance and responsiveness
+> - Use parallel streams (Java 8) with `ForkJoinPool` to split collection processing into chunks across multiple threads on multi-core CPUs
+> - Describe the JVM's role in thread management and how thread scheduling works
+> - Set and use thread priorities to influence scheduling order; explain daemon threads (background threads that do not prevent JVM shutdown)
+> - Describe concurrency design patterns: thread-per-message (new thread per task), worker thread (thread pool pattern), and producer-consumer (coordinating producing and consuming threads)
 
 **Watch (~1 h 28 min):**
 - Module 26 -- Performance and Scalability -- second half (~26 min)
@@ -1946,10 +1976,11 @@ IntStream.rangeClosed(1, 1000)
 ### Day 38 -- Advanced Topics + Modules/Packaging
 
 > **Objectives -- by the end of today you should be able to:**
-> - Write a `module-info.java` with `requires`, `requires transitive`, `exports`, `opens`, `provides...with`, and `uses`
-> - Compile, package, and run a modular application from the command line
-> - Explain the difference between top-down and bottom-up module migration strategies
-> - Define what an automatic module is and how its name is derived from the JAR filename
+> - Handle exceptions in multithreaded code: explain that unhandled exceptions in a thread can terminate it silently; use `Thread.UncaughtExceptionHandler` for centralized handling; handle exceptions inside `Runnable`/`Callable`
+> - Compare advanced locking mechanisms (`ReentrantLock`, `ReadWriteLock`, `StampedLock`) with `synchronized` and explain when each is appropriate
+> - Build a multithreaded web server: handle HTTP requests with thread-per-request model, address concurrency challenges (shared resources, synchronization, race conditions), and design for scalability
+> - Write `module-info.java` with `requires`, `exports`, `opens`, `provides`/`uses` directives; explain `requires transitive` and automatic modules for migration
+> - Use CLI tools for modular applications: `javac` with `--module-source-path`, `java` with `--module-path` and `-m`, `jar` for modular/non-modular JARs, `jdeps` for dependency analysis, `jlink` for custom runtime images
 
 **Watch (~1 h 12 min):**
 - Module 28 -- Best Practices and Advanced Topics -- second half (~37 min)
@@ -2001,10 +2032,11 @@ module com.myapp {
 ### Day 39 -- Case Studies + Tools
 
 > **Objectives -- by the end of today you should be able to:**
-> - Analyze real-world Java case studies and identify which design patterns and language features are applied
-> - Use `javac`, `java`, `jar`, `jdeps`, and `jlink` from the command line with correct flags
-> - Create both modular and non-modular JARs and run them
-> - Generate a custom runtime image with `jlink`
+> - Implement a producer-consumer system: producer and consumer threads sharing a resource with proper coordination to avoid conflicts
+> - Develop a console-based real-time chat system: multiple clients connected to a server, sending and receiving messages using threads
+> - Debug multithreaded code: use `jstack` to capture thread dumps, detect deadlocks (e.g., inconsistent lock order with `ReentrantLock`), and fix them by enforcing consistent lock acquisition order; use VisualVM, IDE debugging, logging (Log4j2/SLF4J), and static analysis (FindBugs/SonarQube)
+> - Unit test multithreaded code with JUnit 5: write a `ThreadSafeCounter` with `ReentrantLock`, test with `ExecutorService` (10 threads), `awaitTermination`, and `assertEquals`; apply isolation, mocking, timeouts, and stress testing approaches
+> - Profile multithreaded applications with Java VisualVM: monitor thread states (running, waiting, blocked), CPU hotspots, memory allocation, and lock contention using a `BankAccount` synchronized example
 
 **Watch (~1 h 15 min):**
 - Module 29 -- Case Studies and Practical Scenarios -- second half (~35 min)
@@ -2029,10 +2061,10 @@ module com.myapp {
 ### Day 40 -- Mock Exam #1
 
 > **Objectives -- by the end of today you should be able to:**
-> - Complete a 50-question mock exam under timed conditions (120 minutes)
-> - Score at least 68% (passing threshold) and identify your top 3 weakest topic areas
-> - Analyze incorrect answers to understand whether the error was conceptual, a misread, or a trap
-> - Create a focused review plan for Days 41-42 based on mock exam results
+> - Work through ~50 mock exam questions covering all 1Z0-830 topics: Java fundamentals/JVM, variable scope and shadowing, logical operators and short-circuiting, switch-case (duplicate labels = compile error), arrays (jagged, `IndexOutOfBoundsException`), for-each (loop variable is a copy)
+> - Answer exam questions on OOP: method overloading (exact match vs widening vs varargs, ambiguous calls), record classes, abstract classes (constructor order), interfaces (default/static methods, multiple inheritance), sealed classes (`permits`, `final`/`sealed`/`non-sealed`), `instanceof` pattern matching
+> - Answer exam questions on APIs: streams (`allMatch`/`anyMatch`/`noneMatch`/`findFirst`), `ZonedDateTime`, collections (`LinkedHashMap`), strings, garbage collection, lambdas (`var` in parameters), I/O (`FileReader`, try-with-resources), threads, exceptions
+> - Score at least 68% (passing threshold), identify your top 3 weakest topic areas, and create a focused review plan for Days 41-42
 
 **Watch (~1 h 26 min):**
 - Module 31 -- Mock Exam walkthrough (1 h 26 min)
