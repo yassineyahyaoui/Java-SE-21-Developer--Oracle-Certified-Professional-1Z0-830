@@ -1,5 +1,54 @@
 # Java SE 21 (1Z0-830) Certification -- 42-Day Study Plan
 
+## Plan at a Glance
+
+| Phase | Day | Title |
+|-------|-----|-------|
+| **Phase 1 -- Java Foundations** | 1 | Welcome + Java Setup |
+| | 2 | Java Environment (finish) |
+| | 3 | Java Basics (Part 1) |
+| | 4 | Java Basics (Part 2) |
+| | 5 | Operators (Part 1) |
+| | 6 | Operators (Part 2) |
+| | 7 | Arrays + Wrapper Classes |
+| **Phase 2 -- Control Flow, Methods and OOP** | 8 | Control Flow (Part 1) |
+| | 9 | Control Flow (Part 2) |
+| | 10 | Control Flow (Part 3) + Switch Expressions |
+| | 11 | Methods |
+| | 12 | OOP Concepts (Part 1) |
+| | 13 | OOP Concepts (Part 2) |
+| | 14 | OOP Programming (Part 1) |
+| | 15 | OOP Programming (Part 2) -- Sealed Types + Records |
+| | 16 | OOP Programming (Part 3) -- Pattern Matching |
+| | 17 | Enums + OOP Review |
+| | 18 | CHECKPOINT: OOP + Control Flow |
+| **Phase 3 -- Strings, Collections and Exceptions** | 19 | Strings (Part 1) |
+| | 20 | Strings (Part 2) + Text Blocks |
+| | 21 | Collections (Part 1) -- List and Set |
+| | 22 | Collections (Part 2) -- Map and Deque |
+| | 23 | Collections (Part 3) -- Sorting and Advanced Ops |
+| | 24 | Exception Handling |
+| | 25 | CHECKPOINT: Collections + Exceptions |
+| **Phase 4 -- Lambda, Streams and Date/Time** | 26 | Lambda Expressions (Part 1) |
+| | 27 | Lambda Expressions (Part 2) |
+| | 28 | Stream API (Part 1) |
+| | 29 | Stream API (Part 2) -- Collectors + Parallel |
+| | 30 | Date and Time (Part 1) |
+| | 31 | Date and Time (Part 2) |
+| **Phase 5 -- I/O and Concurrency** | 32 | Java I/O (Part 1) |
+| | 33 | Java I/O (Part 2) |
+| | 34 | Java I/O (Part 3) + Thread Basics |
+| | 35 | Concurrency Core |
+| | 36 | Concurrency Advanced |
+| | 37 | Virtual Threads + Performance |
+| | 38 | Advanced Topics + Modules/Packaging |
+| **Phase 6 -- Review and Mock Exams** | 39 | Case Studies + Tools |
+| | 40 | Mock Exam #1 |
+| | 41 | Practice Exam + Weak Area Deep Dive |
+| | 42 | Final Review + Exam Readiness |
+
+---
+
 ## Exam Snapshot
 
 | Detail | Value |
