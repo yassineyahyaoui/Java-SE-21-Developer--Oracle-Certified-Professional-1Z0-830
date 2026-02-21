@@ -2,50 +2,50 @@
 
 ## Plan at a Glance
 
-| Phase | Day | Title |
-|-------|-----|-------|
-| **Phase 1 -- Java Foundations** | 1 | Welcome + Java Setup |
-| | 2 | Java Environment (finish) |
-| | 3 | Java Basics (Part 1) |
-| | 4 | Java Basics (Part 2) |
-| | 5 | Operators (Part 1) |
-| | 6 | Operators (Part 2) |
-| | 7 | Arrays + Wrapper Classes |
-| **Phase 2 -- Control Flow, Methods and OOP** | 8 | Control Flow (Part 1) |
-| | 9 | Control Flow (Part 2) |
-| | 10 | Control Flow (Part 3) + Switch Expressions |
-| | 11 | Methods |
-| | 12 | OOP Concepts (Part 1) |
-| | 13 | OOP Concepts (Part 2) |
-| | 14 | OOP Programming (Part 1) |
-| | 15 | OOP Programming (Part 2) -- Sealed Types + Records |
-| | 16 | OOP Programming (Part 3) -- Pattern Matching |
-| | 17 | Enums + OOP Review |
-| | 18 | CHECKPOINT: OOP + Control Flow |
-| **Phase 3 -- Strings, Collections and Exceptions** | 19 | Strings (Part 1) |
-| | 20 | Strings (Part 2) + Text Blocks |
-| | 21 | Collections (Part 1) -- List and Set |
-| | 22 | Collections (Part 2) -- Map and Deque |
-| | 23 | Collections (Part 3) -- Sorting and Advanced Ops |
-| | 24 | Exception Handling |
-| | 25 | CHECKPOINT: Collections + Exceptions |
-| **Phase 4 -- Lambda, Streams and Date/Time** | 26 | Lambda Expressions (Part 1) |
-| | 27 | Lambda Expressions (Part 2) |
-| | 28 | Stream API (Part 1) |
-| | 29 | Stream API (Part 2) -- Collectors + Parallel |
-| | 30 | Date and Time (Part 1) |
-| | 31 | Date and Time (Part 2) |
-| **Phase 5 -- I/O and Concurrency** | 32 | Java I/O (Part 1) |
-| | 33 | Java I/O (Part 2) |
-| | 34 | Java I/O (Part 3) + Thread Basics |
-| | 35 | Concurrency Core |
-| | 36 | Concurrency Advanced |
-| | 37 | Virtual Threads + Performance |
-| | 38 | Advanced Topics + Modules/Packaging |
-| **Phase 6 -- Review and Mock Exams** | 39 | Case Studies + Tools |
-| | 40 | Mock Exam #1 |
-| | 41 | Practice Exam + Weak Area Deep Dive |
-| | 42 | Final Review + Exam Readiness |
+| Phase | Day | Title | Watch | Practice |
+|-------|-----|-------|-------|----------|
+| **Phase 1 -- Java Foundations** | 1 | Welcome + Java Setup | ~53 min | ~1 h 07 min |
+| | 2 | Java Environment (finish) | ~48 min | ~1 h 12 min |
+| | 3 | Java Basics (Part 1) | ~44 min | ~1 h 16 min |
+| | 4 | Java Basics (Part 2) | ~43 min | ~1 h 17 min |
+| | 5 | Operators (Part 1) | ~43 min | ~1 h 17 min |
+| | 6 | Operators (Part 2) | ~42 min | ~1 h 18 min |
+| | 7 | Arrays + Wrapper Classes | ~1 h 19 min | ~41 min |
+| **Phase 2 -- Control Flow, Methods and OOP** | 8 | Control Flow (Part 1) | ~1 h 05 min | ~55 min |
+| | 9 | Control Flow (Part 2) | ~1 h 05 min | ~55 min |
+| | 10 | Control Flow (Part 3) + Switch Expressions | ~1 h 05 min | ~55 min |
+| | 11 | Methods | ~1 h 00 min | ~1 h 00 min |
+| | 12 | OOP Concepts (Part 1) | ~1 h 12 min | ~48 min |
+| | 13 | OOP Concepts (Part 2) | ~1 h 12 min | ~48 min |
+| | 14 | OOP Programming (Part 1) | ~1 h 11 min | ~49 min |
+| | 15 | OOP Programming (Part 2) -- Sealed Types + Records | ~1 h 11 min | ~49 min |
+| | 16 | OOP Programming (Part 3) -- Pattern Matching | ~1 h 10 min | ~50 min |
+| | 17 | Enums + OOP Review | ~18 min | ~1 h 42 min |
+| | 18 | CHECKPOINT: OOP + Control Flow | -- | ~2 h |
+| **Phase 3 -- Strings, Collections and Exceptions** | 19 | Strings (Part 1) | ~51 min | ~1 h 09 min |
+| | 20 | Strings (Part 2) + Text Blocks | ~50 min | ~1 h 10 min |
+| | 21 | Collections (Part 1) -- List and Set | ~1 h 01 min | ~59 min |
+| | 22 | Collections (Part 2) -- Map and Deque | ~1 h 01 min | ~59 min |
+| | 23 | Collections (Part 3) -- Sorting and Advanced Ops | ~1 h 01 min | ~59 min |
+| | 24 | Exception Handling | ~1 h 01 min | ~59 min |
+| | 25 | CHECKPOINT: Collections + Exceptions | -- | ~2 h |
+| **Phase 4 -- Lambda, Streams and Date/Time** | 26 | Lambda Expressions (Part 1) | ~45 min | ~1 h 15 min |
+| | 27 | Lambda Expressions (Part 2) | ~45 min | ~1 h 15 min |
+| | 28 | Stream API (Part 1) | ~51 min | ~1 h 09 min |
+| | 29 | Stream API (Part 2) -- Collectors + Parallel | ~50 min | ~1 h 10 min |
+| | 30 | Date and Time (Part 1) | ~45 min | ~1 h 15 min |
+| | 31 | Date and Time (Part 2) | ~44 min | ~1 h 16 min |
+| **Phase 5 -- I/O and Concurrency** | 32 | Java I/O (Part 1) | ~42 min | ~1 h 18 min |
+| | 33 | Java I/O (Part 2) | ~42 min | ~1 h 18 min |
+| | 34 | Java I/O (Part 3) + Thread Basics | ~1 h 02 min | ~58 min |
+| | 35 | Concurrency Core | ~1 h 31 min | ~29 min |
+| | 36 | Concurrency Advanced | ~1 h 17 min | ~43 min |
+| | 37 | Virtual Threads + Performance | ~1 h 28 min | ~32 min |
+| | 38 | Advanced Topics + Modules/Packaging | ~1 h 12 min | ~48 min |
+| **Phase 6 -- Review and Mock Exams** | 39 | Case Studies + Tools | ~1 h 15 min | ~45 min |
+| | 40 | Mock Exam #1 | ~1 h 26 min | ~34 min |
+| | 41 | Practice Exam + Weak Area Deep Dive | -- | ~2 h |
+| | 42 | Final Review + Exam Readiness | -- | ~2 h |
 
 ---
 
