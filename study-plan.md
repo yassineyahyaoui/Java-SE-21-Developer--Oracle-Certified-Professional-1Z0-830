@@ -111,6 +111,17 @@ Phase 6:  [ ] Day 39 [ ] Day 40 [ ] Day 41 [ ] Day 42
 - Module 01 -- Introduction to Java SE 21 Developer Certification Course (3 min)
 - Module 02 -- Introduction to Java and Environment Setup -- first half (~50 min)
 
+
+- **Videos to watch:**
+  - 01. Introduction to Java SE 21 Developer Certification Course/1. What Will We Learn In This Course.mp4 (2:51)
+  - 02. Introduction to Java and Environment Setup/1. Section Overview.mp4 (1:00)
+  - 02. Introduction to Java and Environment Setup/2. Some Information about Java SE 21 Developer Certified Professional 1Z0-830 Exam.mp4 (2:20)
+  - 02. Introduction to Java and Environment Setup/3. Basic Programming Terms.mp4 (3:26)
+  - 02. Introduction to Java and Environment Setup/4. Getting Started With Java.mp4 (6:59)
+  - 02. Introduction to Java and Environment Setup/5. Download and Install Java on Windows.mp4 (9:52)
+  - 02. Introduction to Java and Environment Setup/6. Download and Install Java on MacOS.mp4 (7:18)
+**Total watch time:** 33m 46s (actual)
+
 **Practice (~1 h 07 min):**
 - Install JDK 21 (download from https://jdk.java.net/21/ or Oracle)
 - Set up your IDE (IntelliJ IDEA Community recommended)
@@ -142,6 +153,16 @@ System.out.println("Java version: " + System.getProperty("java.version"));
 **Watch (~48 min):**
 - Module 02 -- Introduction to Java and Environment Setup -- second half (~48 min)
 
+
+- **Videos to watch:**
+  - 02. Introduction to Java and Environment Setup/7. What is IDE.mp4 (3:16)
+  - 02. Introduction to Java and Environment Setup/8. Download and Install IntelliJ on Windows.mp4 (23:17)
+  - 02. Introduction to Java and Environment Setup/9. Download and Install IntelliJ on MacOS.mp4 (20:47)
+  - 02. Introduction to Java and Environment Setup/10. First Java Program - Hello World.mp4 (9:40)
+  - 02. Introduction to Java and Environment Setup/11. Compiling and Running Applications.mp4 (3:24)
+  - 02. Introduction to Java and Environment Setup/12. Closer Look at the First Java Program.mp4 (6:54)
+**Total watch time:** 1h 7m (actual)
+
 **Practice (~1 h 12 min):**
 - Create 3 small programs using variables, `Scanner` input, and basic output
 - Understand classpath and how Java locates classes
@@ -170,6 +191,14 @@ var price = 19.99;       // double inferred
 
 **Watch (~44 min):**
 - Module 03 -- Basics of Java -- first half (~44 min)
+
+
+- **Videos to watch:**
+  - 03. Basics of Java/1. Section Overview.mp4 (0:59)
+  - 03. Basics of Java/2. Basic Output in Java.mp4 (13:41)
+  - 03. Basics of Java/3. Basic Input in Java.mp4 (9:38)
+  - 03. Basics of Java/4. Comments in Java.mp4 (11:30)
+**Total watch time:** 35m 48s (actual)
 
 **Practice (~1 h 16 min):**
 - Write programs exercising all 8 primitive types
@@ -207,6 +236,14 @@ double z = x;     // yes -- widening
 
 **Watch (~43 min):**
 - Module 03 -- Basics of Java -- second half (~43 min)
+
+
+- **Videos to watch:**
+  - 03. Basics of Java/5. Variables.mp4 (10:43)
+  - 03. Basics of Java/6. Data Types.mp4 (14:10)
+  - 03. Basics of Java/7. Numbers in Java.mp4 (16:57)
+  - 03. Basics of Java/8. Type Conversion and Type Casting.mp4 (9:25)
+**Total watch time:** 51m 15s (actual)
 
 **Practice (~1 h 17 min):**
 - 10 quick exercises on type promotion rules and casting edge cases
@@ -253,6 +290,15 @@ int million = 1_000_000;        // valid
 
 **Watch (~43 min):**
 - Module 04 -- Operators -- first half (~43 min)
+
+
+- **Videos to watch:**
+  - 04. Operators/1. Section Overview.mp4 (1:02)
+  - 04. Operators/2. Arithmetic Operators.mp4 (6:46)
+  - 04. Operators/3. Assignment Operators.mp4 (6:34)
+  - 04. Operators/4. Unary Operators.mp4 (6:39)
+  - 04. Operators/5. Equality and Relational Operators.mp4 (5:24)
+**Total watch time:** 26m 25s (actual)
 
 **Practice (~1 h 17 min):**
 - Evaluate 15 complex expressions by hand (precedence + associativity), then verify in code
@@ -301,6 +347,15 @@ int j = i++ + ++i + i-- + --i;  // trace through step by step
 **Watch (~42 min):**
 - Module 04 -- Operators -- second half (~42 min)
 
+
+- **Videos to watch:**
+  - 04. Operators/6. Conditional Operators.mp4 (6:10)
+  - 04. Operators/7. Bitwise and Bitshift Operators.mp4 (23:15)
+  - 04. Operators/8. Char Data Type.mp4 (14:12)
+  - 04. Operators/9. Operator Precedence.mp4 (12:06)
+  - 04. Operators/10. Expressions, Statements, and Blocks.mp4 (3:02)
+**Total watch time:** 58m 44s (actual)
+
 **Practice (~1 h 18 min):**
 - Write tricky operator puzzles
 - Focus on short-circuit evaluation (`&&`, `||`) and `instanceof`
@@ -346,6 +401,17 @@ int result3 = (2 + 3) * (4 - 1);   // 5 * 3 = 15
 **Watch (~1 h 19 min):**
 - Module 05 -- Array (1 h 06 min)
 - Module 10 -- Wrapper Classes, Auto-Boxing and Unboxing (13 min)
+
+
+- **Videos to watch:**
+  - 05. Array/1. Introduction to Array.mp4 (19:48)
+  - 05. Array/2. Sorting Array.mp4 (11:59)
+  - 05. Array/3. Searching Array.mp4 (13:15)
+  - 05. Array/4. Multi-dimensional Arrays.mp4 (21:24)
+  - 10. Wrapper Classes, Auto-Boxing and Unboxing/1. Introduction to Wrapper Class in Java.mp4 (2:38)
+  - 10. Wrapper Classes, Auto-Boxing and Unboxing/2. Conversion of Types.mp4 (1:53)
+  - 10. Wrapper Classes, Auto-Boxing and Unboxing/3. Autoboxing - UnBoxing.mp4 (8:49)
+**Total watch time:** 1h 19m (actual)
 
 **Practice (~41 min):**
 - Multi-dimensional arrays, `Arrays.sort`, `Arrays.copyOf`
@@ -409,6 +475,15 @@ Integer val = null;
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- first third (~1 h 05 min)
 
+
+- **Videos to watch:**
+  - 06. Control Flow Statements/1. If and If-Else Statement.mp4 (22:30)
+  - 06. Control Flow Statements/2. Ternary Operator.mp4 (8:05)
+  - 06. Control Flow Statements/3. If-Else - If Ladder Statement, Nested If Statement.mp4 (12:22)
+  - 06. Control Flow Statements/4. Switch-Case Statement.mp4 (13:26)
+  - 06. Control Flow Statements/5. Simple Calculator App with Switch Statement.mp4 (9:32)
+**Total watch time:** 1h 5m (actual)
+
 **Practice (~55 min):**
 - Write 10 `if/else` and classic `switch` exercises, including fall-through behavior
 
@@ -453,6 +528,15 @@ switch (grade) {
 
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- second third (~1 h 05 min)
+
+
+- **Videos to watch:**
+  - 06. Control Flow Statements/6. For Loops.mp4 (15:35)
+  - 06. Control Flow Statements/7. Enhanced For Loop (For-Each Loop).mp4 (9:34)
+  - 06. Control Flow Statements/8. While Loop.mp4 (13:01)
+  - 06. Control Flow Statements/9. Infinite Loop.mp4 (17:49)
+  - 06. Control Flow Statements/10. Do - While Loop.mp4 (16:22)
+**Total watch time:** 1h 12m (actual)
 
 **Practice (~55 min):**
 - `for`, `while`, `do-while` loops
@@ -505,6 +589,15 @@ for (int n : nums) {
 
 **Watch (~1 h 05 min):**
 - Module 06 -- Control Flow Statements -- final third (~1 h 05 min)
+
+
+- **Videos to watch:**
+  - 06. Control Flow Statements/11. Break Keyword.mp4 (11:59)
+  - 06. Control Flow Statements/12. Continue Keyword.mp4 (14:45)
+  - 06. Control Flow Statements/13. Return Keyword.mp4 (7:46)
+  - 06. Control Flow Statements/14. Labeled Loops.mp4 (10:47)
+  - 06. Control Flow Statements/15. Fibonacci Series.mp4 (11:24)
+**Total watch time:** 56m 41s (actual)
 
 **Practice (~55 min):**
 - Switch expressions (arrow syntax, `yield`)
@@ -566,6 +659,17 @@ String result = switch (obj) {
 **Watch (~1 h 00 min):**
 - Module 07 -- Methods (1 h 00 min)
 
+
+- **Videos to watch:**
+  - 07. Methods/1. Section Overview.mp4 (0:47)
+  - 07. Methods/2. What is Method.mp4 (16:46)
+  - 07. Methods/3. Method Calling.mp4 (2:02)
+  - 07. Methods/4. Types of Methods.mp4 (10:48)
+  - 07. Methods/5. Java Variable Arguments (Java Var-Args).mp4 (17:40)
+  - 07. Methods/6. Method Overloading.mp4 (6:26)
+  - 07. Methods/7. Find Exponential Number.mp4 (5:52)
+**Total watch time:** 1h 0m (actual)
+
 **Practice (~1 h 00 min):**
 - Method overloading, var-args, pass-by-value
 
@@ -612,6 +716,16 @@ static void test(Integer a) { System.out.println("Integer"); }
 
 **Watch (~1 h 12 min):**
 - Module 08 -- Java Object-Oriented Concept -- first half (~1 h 12 min)
+
+
+- **Videos to watch:**
+  - 08. Java Object-Oriented Concept/1. Section Overview.mp4 (1:14)
+  - 08. Java Object-Oriented Concept/2. OOP Concept, Object & Class.mp4 (5:35)
+  - 08. Java Object-Oriented Concept/3. Stack & Heap.mp4 (7:49)
+  - 08. Java Object-Oriented Concept/4. Access Modifiers.mp4 (13:49)
+  - 08. Java Object-Oriented Concept/5. Naming Conventions.mp4 (9:38)
+  - 08. Java Object-Oriented Concept/6. Constructor.mp4 (21:24)
+**Total watch time:** 59m 29s (actual)
 
 **Practice (~48 min):**
 - Create classes with constructors, `this`, access modifiers
@@ -672,6 +786,16 @@ public class BankAccount {
 **Watch (~1 h 12 min):**
 - Module 08 -- Java Object-Oriented Concept -- second half (~1 h 12 min)
 
+
+- **Videos to watch:**
+  - 08. Java Object-Oriented Concept/7. Packages and Import - Part 1.mp4 (10:31)
+  - 08. Java Object-Oriented Concept/8. Packages and Import - Part 2.mp4 (18:34)
+  - 08. Java Object-Oriented Concept/9. “static” Keyword.mp4 (13:17)
+  - 08. Java Object-Oriented Concept/10. Static import.mp4 (13:11)
+  - 08. Java Object-Oriented Concept/11. Nested & Inner Classes.mp4 (16:32)
+  - 08. Java Object-Oriented Concept/12. Local inner classes.mp4 (12:48)
+**Total watch time:** 1h 24m (actual)
+
 **Practice (~48 min):**
 - Inheritance, `super`, constructor chaining
 
@@ -728,6 +852,15 @@ class Rectangle extends Shape {
 **Watch (~1 h 11 min):**
 - Module 09 -- Java Object-Oriented Programming -- first third (~1 h 11 min)
 
+
+- **Videos to watch:**
+  - 09. Java Object-Oriented Programming/1. Section Overview.mp4 (1:12)
+  - 09. Java Object-Oriented Programming/2. Inheritance.mp4 (23:09)
+  - 09. Java Object-Oriented Programming/3. Sealed Class.mp4 (9:43)
+  - 09. Java Object-Oriented Programming/4. Method Overriding.mp4 (11:29)
+  - 09. Java Object-Oriented Programming/5. “super” and “this” Keywords - Part 1.mp4 (14:19)
+**Total watch time:** 59m 52s (actual)
+
 **Practice (~49 min):**
 - Abstract classes, method overriding, polymorphism
 
@@ -775,6 +908,15 @@ arr[0] = 99;        // OK -- array content can change
 
 **Watch (~1 h 11 min):**
 - Module 09 -- Java Object-Oriented Programming -- second third (~1 h 11 min)
+
+
+- **Videos to watch:**
+  - 09. Java Object-Oriented Programming/6. “super” and “this” Keywords - Part 2.mp4 (10:25)
+  - 09. Java Object-Oriented Programming/7. “super” and “this” Keywords - Part 3.mp4 (10:31)
+  - 09. Java Object-Oriented Programming/8. “final” Keyword.mp4 (14:04)
+  - 09. Java Object-Oriented Programming/9. abstract Keyword.mp4 (17:40)
+  - 09. Java Object-Oriented Programming/10. Interface.mp4 (18:22)
+**Total watch time:** 1h 11m (actual)
 
 **Practice (~49 min):**
 - Sealed classes/interfaces, record classes
@@ -831,6 +973,15 @@ record Range(int min, int max) {
 
 **Watch (~1 h 10 min):**
 - Module 09 -- Java Object-Oriented Programming -- final third (~1 h 10 min)
+
+
+- **Videos to watch:**
+  - 09. Java Object-Oriented Programming/11. Polymorphism.mp4 (15:05)
+  - 09. Java Object-Oriented Programming/12. Encapsulation.mp4 (14:15)
+  - 09. Java Object-Oriented Programming/13. Anonymous Class.mp4 (11:01)
+  - 09. Java Object-Oriented Programming/14. Record Class.mp4 (29:09)
+  - 09. Java Object-Oriented Programming/15. var Keyword.mp4 (12:10)
+**Total watch time:** 1h 21m (actual)
 
 **Practice (~50 min):**
 - Pattern matching with `instanceof` and `switch`
@@ -896,6 +1047,12 @@ class Outer {
 
 **Watch (~18 min):**
 - Module 14 -- Enum Types (18 min)
+
+
+- **Videos to watch:**
+  - 14. Enum Types/1. Enum Types.mp4 (10:34)
+  - 14. Enum Types/2. Traffic Lights Program With Enum.mp4 (7:30)
+**Total watch time:** 18m 5s (actual)
 
 **Practice (~1 h 42 min):**
 - Enum deep dive
@@ -991,6 +1148,11 @@ enum Operation {
 **Watch (~51 min):**
 - Module 11 -- Strings -- first half (~51 min)
 
+
+- **Videos to watch:**
+  - 11. Strings/1. Section Overview.mp4 (1:12)
+**Total watch time:** 45m 28s (actual)
+
 **Practice (~1 h 09 min):**
 - `String` methods, string pool, immutability
 
@@ -1041,6 +1203,14 @@ original = original.concat(" World"); // must reassign
 
 **Watch (~50 min):**
 - Module 11 -- Strings -- second half (~50 min)
+
+
+- **Videos to watch:**
+  - 11. Strings/2. What is String.mp4 (14:34)
+  - 11. Strings/3. Equality of Strings.mp4 (29:43)
+  - 11. Strings/4. Immutability of Strings.mp4 (9:24)
+  - 11. Strings/5. Useful Methods of String - Part 1.mp4 (13:39)
+**Total watch time:** 23m 3s (actual)
 
 **Practice (~1 h 10 min):**
 - `StringBuilder`, text blocks
@@ -1097,6 +1267,15 @@ String html = """
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- first third (~1 h 01 min)
 
+
+- **Videos to watch:**
+  - 12. Collections/1. Section Overview.mp4 (1:09)
+  - 12. Collections/2. Introduction to Collections.mp4 (10:45)
+  - 12. Collections/3. List Interface.mp4 (13:18)
+  - 12. Collections/4. ArrayList Class.mp4 (17:48)
+  - 12. Collections/5. Conversion Between Lists and Arrays.mp4 (17:36)
+**Total watch time:** 1h 0m (actual)
+
 **Practice (~59 min):**
 - `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`
 - Sorting with `Comparable`/`Comparator`
@@ -1152,6 +1331,15 @@ students.sort(Comparator.comparing(Student::name));  // by name
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- second third (~1 h 01 min)
 
+
+- **Videos to watch:**
+  - 12. Collections/6. Sorting Array List.mp4 (13:25)
+  - 12. Collections/7. Comparator.mp4 (12:25)
+  - 12. Collections/8. Searching ArrayList.mp4 (8:49)
+  - 12. Collections/9. Itrator and ListIterator.mp4 (15:41)
+  - 12. Collections/10. Set Interface - Part 1.mp4 (13:36)
+**Total watch time:** 1h 3m (actual)
+
 **Practice (~59 min):**
 - `HashMap`, `TreeMap`, `ArrayDeque`
 
@@ -1206,6 +1394,14 @@ Map<String, Long> freq = Arrays.stream(text.split(" "))
 **Watch (~1 h 01 min):**
 - Module 12 -- Collections -- final third (~1 h 01 min)
 
+
+- **Videos to watch:**
+  - 12. Collections/11. Set Interface - Part 2.mp4 (12:59)
+  - 12. Collections/12. Queue.mp4 (12:59)
+  - 12. Collections/13. Deque.mp4 (8:18)
+  - 12. Collections/14. Map Interface - Part 1.mp4 (12:27)
+**Total watch time:** 46m 44s (actual)
+
 **Practice (~59 min):**
 - Advanced sorting, unmodifiable collections
 
@@ -1255,6 +1451,20 @@ class C implements A, B {
 
 **Watch (~1 h 01 min):**
 - Module 13 -- Exception Handling in Java (1 h 01 min)
+
+
+- **Videos to watch:**
+  - 13. Exception Handling in Java/1. Intro to Exception.mp4 (2:02)
+  - 13. Exception Handling in Java/2. Error vs Exception.mp4 (3:16)
+  - 13. Exception Handling in Java/3. Exception Types.mp4 (2:43)
+  - 13. Exception Handling in Java/4. Try – Catch Block.mp4 (2:00)
+  - 13. Exception Handling in Java/5. finally Block.mp4 (14:24)
+  - 13. Exception Handling in Java/6. throw Keyword.mp4 (5:03)
+  - 13. Exception Handling in Java/7. throws Keyword.mp4 (6:09)
+  - 13. Exception Handling in Java/8. throw vs throws.mp4 (1:02)
+  - 13. Exception Handling in Java/9. Useful Methods of Throwable Class.mp4 (7:20)
+  - 13. Exception Handling in Java/10. Bank Account Balance.mp4 (16:35)
+**Total watch time:** 1h 0m (actual)
 
 **Practice (~59 min):**
 - try/catch/finally, multi-catch, try-with-resources, custom exceptions
@@ -1354,6 +1564,14 @@ static int test() {
 **Watch (~45 min):**
 - Module 15 -- Lambda Expression -- first half (~45 min)
 
+
+- **Videos to watch:**
+  - 15. Lambda Expression/1. Section Overview.mp4 (0:42)
+  - 15. Lambda Expression/2. Marker and Functional Interfaces.mp4 (3:20)
+  - 15. Lambda Expression/3. Lambda Expression.mp4 (10:03)
+  - 15. Lambda Expression/4. Predicate.mp4 (15:40)
+**Total watch time:** 29m 45s (actual)
+
 **Practice (~1 h 15 min):**
 - Functional interfaces, method references
 
@@ -1394,6 +1612,13 @@ names.stream()
 
 **Watch (~45 min):**
 - Module 15 -- Lambda Expression -- second half (~45 min)
+
+
+- **Videos to watch:**
+  - 15. Lambda Expression/5. Method Reference.mp4 (24:02)
+  - 15. Lambda Expression/6. Switch Expression (Enhanced Switch Statement).mp4 (25:39)
+  - 15. Lambda Expression/7. Simple Calculator app with Lambda.mp4 (10:47)
+**Total watch time:** 1h 0m (actual)
 
 **Practice (~1 h 15 min):**
 - Predicate/Function composition, effectively final variables
@@ -1443,6 +1668,12 @@ static <T, R> List<R> filterAndTransform(
 
 **Watch (~51 min):**
 - Module 16 -- Stream API -- first half (~51 min)
+
+
+- **Videos to watch:**
+  - 16. Stream API/1. Introduction to Stream.mp4 (20:29)
+  - 16. Stream API/2. Reduction Operations - Part 1.mp4 (24:36)
+**Total watch time:** 45m 5s (actual)
 
 **Practice (~1 h 09 min):**
 - Stream creation, intermediate operations
@@ -1507,6 +1738,12 @@ emps.stream()
 **Watch (~50 min):**
 - Module 16 -- Stream API -- second half (~50 min)
 
+
+- **Videos to watch:**
+  - 16. Stream API/3. Reduction Operations - Part 2.mp4 (28:31)
+  - 16. Stream API/4. Parallelism and Parallel Stream.mp4 (27:58)
+**Total watch time:** 56m 29s (actual)
+
 **Practice (~1 h 10 min):**
 - Terminal operations, collectors, parallel streams
 
@@ -1568,6 +1805,14 @@ long sumParallel = LongStream.rangeClosed(1, 1_000_000)
 **Watch (~45 min):**
 - Module 17 -- Date & Time -- first half (~45 min)
 
+
+- **Videos to watch:**
+  - 17. Date&Time/1. Section Overview.mp4 (0:46)
+  - 17. Date&Time/2. Calendar Class.mp4 (21:03)
+  - 17. Date&Time/3. Local Date Class.mp4 (17:03)
+  - 17. Date&Time/4. Local Time Class.mp4 (11:59)
+**Total watch time:** 50m 50s (actual)
+
 **Practice (~1 h 15 min):**
 - Core Date-Time API classes
 
@@ -1616,6 +1861,13 @@ ZonedDateTime afterDST = beforeDST.plusHours(1);
 
 **Watch (~44 min):**
 - Module 17 -- Date & Time -- second half (~44 min)
+
+
+- **Videos to watch:**
+  - 17. Date&Time/5. Local Date Time Class.mp4 (12:00)
+  - 17. Date&Time/6. Period Class.mp4 (9:39)
+  - 17. Date&Time/7. Date Time Formatting (DateTimeFormatter Class).mp4 (16:47)
+**Total watch time:** 38m 25s (actual)
 
 **Practice (~1 h 16 min):**
 - Period, Duration, formatting/parsing
@@ -1677,6 +1929,14 @@ System.out.println("Tokyo:    " + tokyo);
 **Watch (~42 min):**
 - Module 18 -- Java IO -- first third (~42 min)
 
+
+- **Videos to watch:**
+  - 18. Java IO (Java Input  Output)/1. Section Overview.mp4 (1:08)
+  - 18. Java IO (Java Input  Output)/2. Introduction to Java IO.mp4 (4:35)
+  - 18. Java IO (Java Input  Output)/3. OutputStream Class.mp4 (19:10)
+  - 18. Java IO (Java Input  Output)/4. InputStream Class - Part 1.mp4 (8:07)
+**Total watch time:** 33m (actual)
+
 **Practice (~1 h 18 min):**
 - NIO.2 Path and Files API
 
@@ -1731,6 +1991,13 @@ try (Stream<Path> stream = Files.find(Path.of("."), 10,
 
 **Watch (~42 min):**
 - Module 18 -- Java IO -- second third (~42 min)
+
+
+- **Videos to watch:**
+  - 18. Java IO (Java Input  Output)/5. InputStream Class - Part 2.mp4 (16:35)
+  - 18. Java IO (Java Input  Output)/6. Writer Class.mp4 (13:52)
+  - 18. Java IO (Java Input  Output)/7. Reader Class.mp4 (21:33)
+**Total watch time:** 52m (actual)
 
 **Practice (~1 h 18 min):**
 - I/O streams, readers/writers
@@ -1793,6 +2060,19 @@ try (var pw = new PrintWriter(new FileWriter("log.txt", true))) {
 - Module 19 -- Overview of Threads (8 min)
 - Module 20 -- Thread Creation and Management (13 min)
 
+
+- **Videos to watch:**
+  - 18. Java IO (Java Input  Output)/8. Copying a file with Java IO.mp4 (11:56)
+  - 18. Java IO (Java Input  Output)/9. Object Serialization and Deserialization.mp4 (17:47)
+  - 18. Java IO (Java Input  Output)/10. transient keyword.mp4 (10:43)
+  - 19. Overview of Threads/1. What is Thread.mp4 (2:58)
+  - 19. Overview of Threads/2. Create Thread Class.mp4 (2:42)
+  - 19. Overview of Threads/3. Create Runnable Class.mp4 (2:42)
+  - 20. Thread Creation and Management/1. Thread and Processes.mp4 (6:25)
+  - 20. Thread Creation and Management/2. Thread management.mp4 (3:56)
+  - 20. Thread Creation and Management/3. Thread states and monitoring.mp4 (2:31)
+**Total watch time:** 1h 1m (actual)
+
 **Practice (~58 min):**
 - Serialization, basic thread creation
 
@@ -1854,6 +2134,22 @@ t.start();  // start(), NOT run()!
 - Module 21 -- Synchronization and Concurrency Control (17 min)
 - Module 22 -- High-level Concurrency APIs (49 min)
 - Module 23 -- Thread Coordination (25 min)
+
+
+- **Videos to watch:**
+  - 21. Synchronization and Concurrency Control/1. Introduction to Synchronization.mp4 (2:35)
+  - 21. Synchronization and Concurrency Control/2. “synchronized” Keyword.mp4 (9:26)
+  - 21. Synchronization and Concurrency Control/3. “volatile” Keyword.mp4 (5:11)
+  - 22. High-level Concurrency APIs/1. Introduction to Concurrency APIs.mp4 (7:06)
+  - 22. High-level Concurrency APIs/2. Executor Service.mp4 (10:46)
+  - 22. High-level Concurrency APIs/3. Scheduled Executor Service.mp4 (10:59)
+  - 22. High-level Concurrency APIs/4. Concurrent Collection.mp4 (8:00)
+  - 22. High-level Concurrency APIs/5. Future and Callable.mp4 (6:29)
+  - 22. High-level Concurrency APIs/6. Atomic Variables.mp4 (6:07)
+  - 23. Thread Coordination/1. Introduction to Thread Coordination.mp4 (3:38)
+  - 23. Thread Coordination/2. Inter-thread communication.mp4 (10:18)
+  - 23. Thread Coordination/3. Locks and Conditions.mp4 (10:35)
+**Total watch time:** 1h 31m (actual)
 
 **Practice (~29 min):**
 - ExecutorService, Callable, Future
@@ -1920,6 +2216,16 @@ String fastest = executor.invokeAny(tasks);  // first to complete
 - Module 25 -- Concurrent Collections (14 min)
 - Module 26 -- Performance and Scalability -- first half (~27 min)
 
+
+- **Videos to watch:**
+  - 24. Locks and Advanced Synchronization/1. ReentrantLock and ReentrantReadWriteLock.mp4 (18:59)
+  - 24. Locks and Advanced Synchronization/2. Condition variables.mp4 (16:58)
+  - 25. Concurrent Collections/1. Thread-safe collections.mp4 (6:57)
+  - 25. Concurrent Collections/2. Blocking queues.mp4 (7:15)
+  - 26. Performance and Scalability/1. Thread contention and deadlocks.mp4 (15:14)
+  - 26. Performance and Scalability/2. Thread safety and immutability.mp4 (14:25)
+**Total watch time:** 1h 19m (actual)
+
 **Practice (~43 min):**
 - Locks, concurrent collections, race conditions
 
@@ -1981,6 +2287,17 @@ counter.compareAndSet(1, 2);  // CAS operation
 - Module 27 -- Java Virtual Machine and Threads (24 min)
 - Module 28 -- Best Practices and Advanced Topics -- first half (~38 min)
 
+
+- **Videos to watch:**
+  - 26. Performance and Scalability/3. Optimizing Thread Pools.mp4 (16:40)
+  - 26. Performance and Scalability/4. Parallel stream.mp4 (6:39)
+  - 27. Java Virtual Machine and Threads/1. JVM’s role in thread management.mp4 (11:17)
+  - 27. Java Virtual Machine and Threads/2. Thread priorities.mp4 (6:51)
+  - 27. Java Virtual Machine and Threads/3. Daemon threads.mp4 (6:19)
+  - 28. Best Practices and Advanced Topics/1. Concurrency Design Patterns.mp4 (31:05)
+  - 28. Best Practices and Advanced Topics/2. Handling exceptions in threads.mp4 (18:23)
+**Total watch time:** 1h 37m (actual)
+
 **Practice (~32 min):**
 - Virtual threads (Java 21)
 
@@ -2034,6 +2351,12 @@ IntStream.rangeClosed(1, 1000)
 **Watch (~1 h 12 min):**
 - Module 28 -- Best Practices and Advanced Topics -- second half (~37 min)
 - Module 29 -- Case Studies and Practical Scenarios -- first half (~35 min)
+
+
+- **Videos to watch:**
+  - 28. Best Practices and Advanced Topics/3. Advanced locking mechanisms.mp4 (25:57)
+  - 29. Case Studies and Practical Scenarios/1. Building a multithreaded web server.mp4 (18:15)
+**Total watch time:** 44m 13s (actual)
 
 **Practice (~48 min):**
 - Java modules (JPMS)
@@ -2090,6 +2413,15 @@ module com.myapp {
 **Watch (~1 h 15 min):**
 - Module 29 -- Case Studies and Practical Scenarios -- second half (~35 min)
 - Module 30 -- Tools and Testing (40 min)
+
+
+- **Videos to watch:**
+  - 29. Case Studies and Practical Scenarios/2. Implementing a producer-consumer system.mp4 (20:31)
+  - 29. Case Studies and Practical Scenarios/3. Developing a real-time chat system.mp4 (30:48)
+  - 30. Tools and Testing/1. Thread debugging tools.mp4 (13:50)
+  - 30. Tools and Testing/2. Unit testing multithreaded code.mp4 (12:33)
+  - 30. Tools and Testing/3. Profiling multithreaded applications.mp4 (13:32)
+**Total watch time:** 1h 31m (actual)
 
 **Practice (~45 min):**
 - Apply case study patterns
