@@ -1,0 +1,800 @@
+{
+  "01": [
+    {
+      "day": 1,
+      "title": "Welcome + Java Setup",
+      "objectives": [
+        "Describe the 1Z0-830 exam structure (50 questions, 120 min, 68% to pass) and the topics the course will cover",
+        "Use `System.out.print`, `System.out.println`, and `System.out.printf` with format specifiers (`%d`, `%s`, `%n`)",
+        "Read user input with the `Scanner` class using `nextInt()`, `next()`, and `nextLine()`, and explain when to call `close()`",
+        "Write single-line (`//`), multi-line (`/* */`), and Javadoc (`/** */`) comments and explain their purpose",
+        "Explain the Java platform concepts: JDK vs JRE vs JVM, bytecode, and \"write once, run anywhere\""
+      ],
+      "watch_ref": [
+        "- Module 01 -- Introduction to Java SE 21 Developer Certification Course (3 min)"
+      ]
+    }
+  ],
+  "02": [
+    {
+      "day": 1,
+      "title": "Welcome + Java Setup",
+      "objectives": [
+        "Describe the 1Z0-830 exam structure (50 questions, 120 min, 68% to pass) and the topics the course will cover",
+        "Use `System.out.print`, `System.out.println`, and `System.out.printf` with format specifiers (`%d`, `%s`, `%n`)",
+        "Read user input with the `Scanner` class using `nextInt()`, `next()`, and `nextLine()`, and explain when to call `close()`",
+        "Write single-line (`//`), multi-line (`/* */`), and Javadoc (`/** */`) comments and explain their purpose",
+        "Explain the Java platform concepts: JDK vs JRE vs JVM, bytecode, and \"write once, run anywhere\""
+      ],
+      "watch_ref": [
+        "- Module 02 -- Introduction to Java and Environment Setup -- first half (~50 min)"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Java Environment (finish)",
+      "objectives": [
+        "Perform widening (automatic) and narrowing (explicit) type conversions and state the size order: `byte` < `short` < `int` < `long` < `float` < `double`",
+        "Predict data loss when narrowing (e.g., `double` to `long` to `byte`) and fix compiler errors with explicit casts",
+        "Set up IntelliJ IDEA Community, create a Java project with JDK 21, and navigate the IDE (project tree, editor, Run/Debug)",
+        "Write, compile, and run a Hello World program; explain the flow: `.java` -> `javac` -> `.class` (bytecode) -> JVM -> output",
+        "Explain every part of `public static void main(String[] args)` including access modifier, `static`, return type, and command-line arguments"
+      ],
+      "watch_ref": [
+        "- Module 02 -- Introduction to Java and Environment Setup -- second half (~48 min)"
+      ]
+    }
+  ],
+  "03": [
+    {
+      "day": 3,
+      "title": "Java Basics (Part 1)",
+      "objectives": [
+        "Use `print`, `println`, and `printf` with format specifiers (`%d`, `%s`, `%n`) and `String.format` to produce formatted output",
+        "Read input with `Scanner` and explain the difference between `next()` (single token, stops at space) and `nextLine()` (full line)",
+        "Write all three comment types (single-line, multi-line, Javadoc) and use Javadoc to document methods with `@param` and `@return`",
+        "Recall the section roadmap: output, input, comments, variables, data types, numbers, type conversion"
+      ],
+      "watch_ref": [
+        "- Module 03 -- Basics of Java -- first half (~44 min)"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Java Basics (Part 2)",
+      "objectives": [
+        "Declare and initialize variables using correct naming rules (case-sensitive, starts with letter/`$`/`_`, no keywords) and follow camelCase convention",
+        "Distinguish between instance variables, static variables, and local variables and state where each is declared",
+        "List all 8 primitive types with their sizes and value ranges, and explain String immutability",
+        "Write numeric literals with suffixes (`L` for long, `F` for float) and underscores, and identify invalid underscore placements (start, end, next to decimal point)",
+        "Convert between decimal and binary/octal/hex both manually and using `Integer.toBinaryString()`, `toOctalString()`, `toHexString()`",
+        "Perform widening (automatic) and narrowing (explicit cast) type conversions and predict data loss (e.g., `double` -> `long` -> `byte`)"
+      ],
+      "watch_ref": [
+        "- Module 03 -- Basics of Java -- second half (~43 min)"
+      ]
+    }
+  ],
+  "04": [
+    {
+      "day": 5,
+      "title": "Operators (Part 1)",
+      "objectives": [
+        "Distinguish between operators and operands and identify the result type of arithmetic expressions",
+        "Use all five arithmetic operators (`+`, `-`, `*`, `/`, `%`) and explain `+` for string concatenation vs numeric addition",
+        "Apply compound assignment operators (`+=`, `-=`, `*=`, `/=`, `%=`) and trace variable values step by step",
+        "Use unary operators (`+`, `-`, `++`, `--`, `!`) and predict output differences between prefix (`++x`) and postfix (`x++`)",
+        "Evaluate equality (`==`, `!=`) and relational (`>`, `<`, `>=`, `<=`) expressions and state that the result is always `boolean`"
+      ],
+      "watch_ref": [
+        "- Module 04 -- Operators -- first half (~43 min)"
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Operators (Part 2)",
+      "objectives": [
+        "Use short-circuit `&&` (AND) and `||` (OR) and predict which operand is skipped when the result is already determined",
+        "Write ternary expressions (`condition ? valueIfTrue : valueIfFalse`) as shorthand for `if/else`",
+        "Apply bitwise (`&`, `|`, `^`, `~`) and bitshift (`<<`, `>>`) operators on integers and verify results with `Integer.toBinaryString()`",
+        "Explain the `char` data type as an integer (0-65535), perform `char` arithmetic (e.g., `'A' + 3`), cast between `char` and `int`, and use `Character.isLetter()`/`isDigit()`",
+        "Evaluate complex expressions by hand using the operator precedence table (multiplicative before additive, unary before binary) and use parentheses to override order",
+        "Distinguish between expressions, statements (end with `;`), and blocks (`{ }`)"
+      ],
+      "watch_ref": [
+        "- Module 04 -- Operators -- second half (~42 min)"
+      ]
+    }
+  ],
+  "05": [
+    {
+      "day": 7,
+      "title": "Arrays + Wrapper Classes",
+      "objectives": [
+        "Declare arrays using both `type[] name` and `type name[]` syntax, instantiate with `new`, initialize with `{ }` literals, and state default values for unassigned elements (`0` for numeric, `null` for reference)",
+        "Access elements by zero-based index, use `array.length`, and explain `ArrayIndexOutOfBoundsException`",
+        "Sort arrays with `Arrays.sort()` (lexicographic for `String`, ASCII for `char`) and search sorted arrays with `Arrays.binarySearch()` (interpret the negative return value `-(insertion point) - 1`)",
+        "Create 2D and 3D arrays and work with jagged arrays (rows of different lengths)",
+        "Explain why wrapper classes exist (collections require objects), convert between primitives and wrappers using `valueOf()` and `intValue()`/`doubleValue()`",
+        "Define autoboxing (primitive -> wrapper) and unboxing (wrapper -> primitive) and predict `NullPointerException` when unboxing a `null` wrapper"
+      ],
+      "watch_ref": [
+        "- Module 05 -- Array (1 h 06 min)"
+      ]
+    }
+  ],
+  "06": [
+    {
+      "day": 8,
+      "title": "Control Flow (Part 1)",
+      "objectives": [
+        "Write `if`, `if-else`, `if-else-if` ladder, and nested `if` statements and predict which branch executes",
+        "Explain single-line `if` rules (curly braces optional for one statement only) and the common trap where the second line always runs",
+        "Use the ternary operator (`?:`) as shorthand for `if-else`, and predict which branch executes and its side effects",
+        "Write `switch-case` statements and list the allowed types (byte, short, int, long, String, enum)",
+        "Predict output with and without `break` (fall-through behavior) and group multiple cases sharing one block",
+        "Explain the difference between `return` (exits the method) and `break` (exits only the switch) inside a case block"
+      ],
+      "watch_ref": [
+        "- Module 06 -- Control Flow Statements -- first third (~1 h 05 min)"
+      ]
+    },
+    {
+      "day": 9,
+      "title": "Control Flow (Part 2)",
+      "objectives": [
+        "Write `for` loops with init/condition/update, declare multiple variables in the init section, and explain loop variable scope",
+        "Use nested `for` loops and count total iterations; write infinite loops with `for(;;)`",
+        "Write enhanced `for-each` loops (`for (Type item : array)`) and explain the limitation (no index access); use `toCharArray()` to iterate a String",
+        "Write `while` loops (condition checked first) and implement a factorial program",
+        "Create `while(true)` infinite loops and predict unreachable-code compile errors (with literals, variables, and `final` constants)",
+        "Write `do-while` loops (body executes at least once) and implement a \"continue or exit\" user-input pattern"
+      ],
+      "watch_ref": [
+        "- Module 06 -- Control Flow Statements -- second third (~1 h 05 min)"
+      ]
+    },
+    {
+      "day": 10,
+      "title": "Control Flow (Part 3) + Switch Expressions",
+      "objectives": [
+        "Use `break` to exit a loop or switch and state where it is valid (only inside loops/switch -- compile error otherwise)",
+        "Use `continue` to skip the current iteration and identify the infinite-loop risk when `continue` bypasses the increment",
+        "Use `return` to exit a method entirely and predict unreachable-code compile errors for statements after `return`",
+        "Write labeled loops (`labelName:` before loop) and use `break label` / `continue label` to control which loop in a nested structure is affected",
+        "Implement the Fibonacci series using a `for` loop with variable swapping"
+      ],
+      "watch_ref": [
+        "- Module 06 -- Control Flow Statements -- final third (~1 h 05 min)"
+      ]
+    }
+  ],
+  "07": [
+    {
+      "day": 11,
+      "title": "Methods",
+      "objectives": [
+        "Define a method with access modifier, optional specifier (`static`, `final`, `abstract`), return type, name, and parameters",
+        "Explain when a method runs (only when called) and when it ends (last statement or `return`)",
+        "Distinguish standard library methods (e.g., `Math.min`, `Math.pow`) from user-defined methods and write methods returning void, primitives, or objects",
+        "Write var-args methods using `...` syntax and state the rules: must be the last parameter, only one per method, treated as an array inside the method, can accept zero arguments",
+        "Write overloaded methods (same name, different parameter types or count) and predict which overload the compiler selects; identify that same name + same parameters = compile error",
+        "Use `Math.pow()` to compute exponential values and cast the `double` result to `int`"
+      ],
+      "watch_ref": [
+        "- Module 07 -- Methods (1 h 00 min)"
+      ]
+    }
+  ],
+  "08": [
+    {
+      "day": 12,
+      "title": "OOP Concepts (Part 1)",
+      "objectives": [
+        "Explain OOP fundamentals: class as blueprint, object as instance with state (fields), behavior (methods), and identity; create objects with `new`",
+        "Describe JVM memory: stack (per-thread, LIFO, local vars/references, `StackOverflowError`) vs heap (shared, objects/instance vars, garbage collected, `OutOfMemoryError`)",
+        "Apply all four access modifiers and state their restrictiveness order: `private` > default (package-private) > `protected` > `public`; predict cross-package visibility",
+        "Follow Java naming conventions: class = uppercase noun, method = lowercase verb, variable = lowercase camelCase; identify valid/invalid identifiers",
+        "Write constructors (same name as class, no return type, overloadable) with `this.field = param`; explain the default no-arg constructor; override `toString()`"
+      ],
+      "watch_ref": [
+        "- Module 08 -- Java Object-Oriented Concept -- first half (~1 h 12 min)"
+      ]
+    },
+    {
+      "day": 13,
+      "title": "OOP Concepts (Part 2)",
+      "objectives": [
+        "Declare packages with hierarchical dot-separated names, explain source file order (`package` -> `import` -> class), and state that `java.lang` is auto-imported",
+        "Use `import pkg.Class` and wildcard `import pkg.*`; resolve name conflicts between packages using fully qualified class names",
+        "Use the `static` keyword on variables (one copy per class), methods (called via class name), and blocks (run when class loads); explain why instance members cannot be used directly in a static context",
+        "Write `import static` statements to use static members without the class name prefix",
+        "Describe static nested classes (access only outer static members) vs inner classes (access all outer members including private) and their different instantiation syntax",
+        "Define local inner classes inside a method block and explain that they can access effectively final local variables (JDK 8+)"
+      ],
+      "watch_ref": [
+        "- Module 08 -- Java Object-Oriented Concept -- second half (~1 h 12 min)"
+      ]
+    }
+  ],
+  "09": [
+    {
+      "day": 14,
+      "title": "OOP Programming (Part 1)",
+      "objectives": [
+        "Implement inheritance with `extends` and explain single, multi-level, and hierarchical inheritance; state that constructors are not inherited but can be invoked with `super()`",
+        "Explain visibility of inherited members: `public`/`protected` always, package-private only in same package, `private` never; `Object` is the root of every class hierarchy",
+        "Declare sealed classes with `sealed` + `permits` and state that subclasses must be `final`, `sealed`, or `non-sealed`",
+        "Override methods correctly: same name/parameters/return type, access modifier cannot be more restrictive than the superclass method",
+        "Use `this` to reference the current instance (fields, methods, constructor) and `super` to access superclass members (fields, methods, constructor)"
+      ],
+      "watch_ref": [
+        "- Module 09 -- Java Object-Oriented Programming -- first third (~1 h 11 min)"
+      ]
+    },
+    {
+      "day": 15,
+      "title": "OOP Programming (Part 2) -- Sealed Types + Records",
+      "objectives": [
+        "Use `super.field` to access a shadowed parent variable, `super.method()` to call a parent method, and `super()` to invoke a parent constructor; combine `this` and `super` in constructor chaining",
+        "Apply the `final` keyword: `final` class cannot be extended, `final` method cannot be overridden, `final` variable cannot be reassigned (constant)",
+        "Declare abstract classes and methods; explain that abstract classes cannot be instantiated but can have constructors and non-abstract methods; state that abstract methods cannot be `final`, `private`, or `static`",
+        "Define interfaces with `implements`; explain that interface variables are implicitly `public static final` and methods are implicitly `public abstract`; write `default` and `static` methods with a body (Java 8+)",
+        "Implement multiple interfaces in a single class and combine `extends` (one class) with `implements` (multiple interfaces)"
+      ],
+      "watch_ref": [
+        "- Module 09 -- Java Object-Oriented Programming -- second third (~1 h 11 min)"
+      ]
+    },
+    {
+      "day": 16,
+      "title": "OOP Programming (Part 3) -- Pattern Matching",
+      "objectives": [
+        "Explain static polymorphism (method overloading) and dynamic polymorphism (method overriding with superclass reference to subclass object)",
+        "Perform implicit upcasting (`Vehicle v = new Car()`) and explicit downcasting with `instanceof` check to avoid `ClassCastException`",
+        "Apply encapsulation: private fields with public `getXxx`/`setXxx` getters and setters; design read-only or write-only access patterns",
+        "Write anonymous classes (`new Interface() { ... }`) for one-off implementations; state that they cannot define constructors and require effectively final local variables",
+        "Declare record classes (`record Name(components)`) and use their generated accessors, `equals`, `hashCode`, `toString`; write compact canonical constructors for validation; list what records can/cannot have",
+        "Use `var` for local variable type inference (Java 10) and state its limitations: not for fields, parameters, return types; must be initialized; cannot assign `null` alone; cannot use with lambda or array brackets"
+      ],
+      "watch_ref": [
+        "- Module 09 -- Java Object-Oriented Programming -- final third (~1 h 10 min)"
+      ]
+    }
+  ],
+  "10": [
+    {
+      "day": 7,
+      "title": "Arrays + Wrapper Classes",
+      "objectives": [
+        "Declare arrays using both `type[] name` and `type name[]` syntax, instantiate with `new`, initialize with `{ }` literals, and state default values for unassigned elements (`0` for numeric, `null` for reference)",
+        "Access elements by zero-based index, use `array.length`, and explain `ArrayIndexOutOfBoundsException`",
+        "Sort arrays with `Arrays.sort()` (lexicographic for `String`, ASCII for `char`) and search sorted arrays with `Arrays.binarySearch()` (interpret the negative return value `-(insertion point) - 1`)",
+        "Create 2D and 3D arrays and work with jagged arrays (rows of different lengths)",
+        "Explain why wrapper classes exist (collections require objects), convert between primitives and wrappers using `valueOf()` and `intValue()`/`doubleValue()`",
+        "Define autoboxing (primitive -> wrapper) and unboxing (wrapper -> primitive) and predict `NullPointerException` when unboxing a `null` wrapper"
+      ],
+      "watch_ref": [
+        "- Module 10 -- Wrapper Classes, Auto-Boxing and Unboxing (13 min)"
+      ]
+    }
+  ],
+  "11": [
+    {
+      "day": 19,
+      "title": "Strings (Part 1)",
+      "objectives": [
+        "Explain what the `String` class is in Java and how to create String objects (literal vs `new String()`)",
+        "Distinguish between the String pool and heap allocation and predict the result of `==` vs `.equals()` on different String references",
+        "Explain String immutability: why calling methods like `concat()` does not modify the original String but creates a new object",
+        "Use core `String` methods from Part 1: `length()`, `charAt()`, `indexOf()`, `substring()`, `toUpperCase()`, `toLowerCase()`, `trim()`, `contains()` and predict their return values"
+      ],
+      "watch_ref": [
+        "- Module 11 -- Strings -- first half (~51 min)"
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Strings (Part 2) + Text Blocks",
+      "objectives": [
+        "Use additional `String` methods from Part 2 and predict their return values",
+        "Create `StringBuffer` objects and use `append()` to modify the string in place; explain that StringBuffer is mutable and thread-safe (synchronized)",
+        "Create `StringBuilder` objects and explain that it has the same API as StringBuffer but is not synchronized, making it faster",
+        "Compare String vs StringBuffer vs StringBuilder on storage (pool vs heap), mutability, performance, and thread safety; state when to use each (StringBuffer for multi-threaded, StringBuilder for single-threaded)",
+        "Implement a Reverse String program using `Scanner`, `length()`, `charAt()`, and a loop from end to start"
+      ],
+      "watch_ref": [
+        "- Module 11 -- Strings -- second half (~50 min)"
+      ]
+    }
+  ],
+  "12": [
+    {
+      "day": 21,
+      "title": "Collections (Part 1) -- List and Set",
+      "objectives": [
+        "Describe the Java Collections Framework hierarchy: `Collection` interface with `Set`, `List`, `Queue`, `Deque` children; distinguish interfaces from implementing classes",
+        "Explain the `List` interface: ordered, allows duplicates; compare `ArrayList` (fast random access) vs `LinkedList` (fast insert/remove at ends); use type parameters with generics",
+        "Create an `ArrayList`, add elements with `add()`, and perform common List operations (get, set, remove, size, contains)",
+        "Convert between lists and arrays using `toArray()` (no-arg and with array parameter), `Arrays.asList()`, and `Collections.addAll()`"
+      ],
+      "watch_ref": [
+        "- Module 12 -- Collections -- first third (~1 h 01 min)"
+      ]
+    },
+    {
+      "day": 22,
+      "title": "Collections (Part 2) -- Map and Deque",
+      "objectives": [
+        "Sort an `ArrayList` using `Collections.sort()` for natural (ascending/alphabetical) order",
+        "Use the `Comparator` interface to define custom sort orders (e.g., descending) and pass it to the overloaded `Collections.sort(list, comparator)`",
+        "Search elements in a sorted `ArrayList` and use `Iterator` / `ListIterator` to traverse a collection one element at a time with `hasNext()`, `next()`, and `remove()`",
+        "Explain the `Set` interface: unordered, no duplicates; distinguish `HashSet` (hashing, no order, allows one `null`), `LinkedHashSet` (insertion order), and `TreeSet` (sorted order)"
+      ],
+      "watch_ref": [
+        "- Module 12 -- Collections -- second third (~1 h 01 min)"
+      ]
+    },
+    {
+      "day": 23,
+      "title": "Collections (Part 3) -- Sorting and Advanced Ops",
+      "objectives": [
+        "Create and use `HashSet`, `LinkedHashSet`, and `TreeSet` in practice and predict element ordering for each",
+        "Explain the `Queue` interface (FIFO) and create queues with `PriorityQueue` and `LinkedList`; use `offer()`, `poll()`, and `peek()`",
+        "Explain the `Deque` interface (double-ended queue, supports both FIFO and LIFO) and use `ArrayDeque` as both a stack (`push`/`pop`/`peek`) and a queue (`offer`/`poll`/`peek`)",
+        "Use the `Map` interface for key-value pairs; distinguish `HashMap` (no order), `LinkedHashMap` (insertion order), and `TreeMap` (sorted by key); state that `Map` is not part of the `Collection` interface",
+        "Create `HashMap` instances, add entries with `put()`, retrieve with `get()`, and explain that duplicate keys are not allowed (value is overwritten)"
+      ],
+      "watch_ref": [
+        "- Module 12 -- Collections -- final third (~1 h 01 min)"
+      ]
+    }
+  ],
+  "13": [
+    {
+      "day": 24,
+      "title": "Exception Handling",
+      "objectives": [
+        "Explain the `Throwable` hierarchy: `Error` (system-level, unrecoverable: `StackOverflowError`, `OutOfMemoryError`) vs `Exception` (recoverable); classify exceptions as checked (compile-time, e.g., `FileNotFoundException`), unchecked (runtime, e.g., `ArithmeticException`), or user-defined",
+        "Write `try/catch` blocks with multiple catch blocks; use multi-catch with `|` (Java 7+) and explain that the exception parameter is effectively final",
+        "Explain the `finally` block: always runs for cleanup (e.g., closing connections) whether or not an exception occurs",
+        "Use `throw` to explicitly throw an exception and `throws` in a method signature to declare exceptions; call `getMessage()`, `toString()`, and `printStackTrace()` on a caught exception to inspect error details",
+        "Create a user-defined exception by extending `Exception` and use it in a practical Bank Account project",
+        "Use try-with-resources (`AutoCloseable`) to automatically close resources and explain that resources are closed in reverse declaration order"
+      ],
+      "watch_ref": [
+        "- Module 13 -- Exception Handling in Java (1 h 01 min)"
+      ]
+    }
+  ],
+  "14": [
+    {
+      "day": 17,
+      "title": "Enums + OOP Review",
+      "objectives": [
+        "Declare enums as predefined constant sets with UPPERCASE naming and use them in `switch` statements; compare enums with `==`",
+        "Use `valueOf(String)` to convert a string to an enum constant and handle `IllegalArgumentException` for invalid input",
+        "Define enums with custom values via a private constructor, write a getter to expose the value, and iterate all constants with `values()`",
+        "Distinguish `name()` (final, returns constant name) from `toString()` (overridable)",
+        "Combine all OOP concepts (inheritance, sealed types, records, enums, interfaces, polymorphism, encapsulation) in a mini-project"
+      ],
+      "watch_ref": [
+        "- Module 14 -- Enum Types (18 min)"
+      ]
+    }
+  ],
+  "15": [
+    {
+      "day": 26,
+      "title": "Lambda Expressions (Part 1)",
+      "objectives": [
+        "Define a functional interface as an interface with exactly one abstract method (SAM); identify `Runnable` as a classic example; state that it can also have `default` and `static` methods",
+        "Apply the `@FunctionalInterface` annotation and explain that the compiler enforces the single-abstract-method rule when it is present",
+        "Explain what a marker interface is and how it differs from a functional interface",
+        "Write lambda expressions using the syntax `(parameters) -> body` as a concise replacement for anonymous classes implementing functional interfaces (Java 8)",
+        "Use the `Predicate<T>` interface from `java.util.function`: call `test()` to evaluate a boolean condition, and combine it with lambda expressions for filtering logic"
+      ],
+      "watch_ref": [
+        "- Module 15 -- Lambda Expression -- first half (~45 min)"
+      ]
+    },
+    {
+      "day": 27,
+      "title": "Lambda Expressions (Part 2)",
+      "objectives": [
+        "Use method references (`::` operator) as a more readable alternative to lambda expressions; explain that they refer to an existing method definition directly (Java 8)",
+        "Write switch expressions using arrow syntax (`->`) that return a value, eliminating `break` and fall-through (Java 12/14); use `yield` to return a value from a multi-statement case block",
+        "Explain the improvements in switch expressions over traditional switch: no fall-through, returns a value, semicolon required at closing brace, and Java 21 further enhancements",
+        "Build a Simple Calculator console application using lambda expressions and functional interfaces to perform addition, subtraction, multiplication, and division on user input"
+      ],
+      "watch_ref": [
+        "- Module 15 -- Lambda Expression -- second half (~45 min)"
+      ]
+    }
+  ],
+  "16": [
+    {
+      "day": 28,
+      "title": "Stream API (Part 1)",
+      "objectives": [
+        "Define a stream as a sequence of elements from a data source (collection, array, file) that does not store data, only performs operations, and can be consumed only once",
+        "Create streams from collections using `.stream()` and perform operations on list elements via the Stream API",
+        "Use `filter` for conditional element selection and `mapToInt` to convert a stream to an `IntStream`",
+        "Apply terminal reduction operations that combine stream contents into a single value: `average()` (with `getAsDouble()`), `sum`, `min`, `max`, `count`"
+      ],
+      "watch_ref": [
+        "- Module 16 -- Stream API -- first half (~51 min)"
+      ]
+    },
+    {
+      "day": 29,
+      "title": "Stream API (Part 2) -- Collectors + Parallel",
+      "objectives": [
+        "Distinguish `collect` from `reduce`: `collect` mutates/builds a collection (e.g., `List` or `Set`) instead of returning a single value",
+        "Use the `filter` + `collect` pattern to gather matching elements into a new list or set",
+        "Explain parallel computing: splitting problems into subproblems solved in separate threads, then combining results; describe the Fork/Join framework",
+        "Explain thread-safety risks with collections: thread interference and memory consistency errors; state that synchronization wrappers add safety but introduce contention",
+        "Use parallel streams on non-thread-safe collections safely (as long as the collection is not modified during processing)"
+      ],
+      "watch_ref": [
+        "- Module 16 -- Stream API -- second half (~50 min)"
+      ]
+    }
+  ],
+  "17": [
+    {
+      "day": 30,
+      "title": "Date and Time (Part 1)",
+      "objectives": [
+        "Use the legacy `Calendar` class: obtain an instance with `Calendar.getInstance()` and extract fields with `calendar.get(Calendar.YEAR)`, `.MONTH`, `.WEEK_OF_YEAR`, `.DAY_OF_MONTH`, etc.",
+        "Create `LocalDate` objects (`java.time`): immutable, date-only (year-month-day), no time or timezone, ISO-8601, thread-safe; use `LocalDate.now()`, `getYear()`, `getMonth()`",
+        "Create `LocalTime` objects (`java.time`): immutable, time-only (hour-minute-second), no date or timezone, ISO-8601, thread-safe, no public constructor, static factory methods",
+        "Explain that all `java.time` classes are immutable and final with no public constructors -- instances are created via static factory methods"
+      ],
+      "watch_ref": [
+        "- Module 17 -- Date & Time -- first half (~45 min)"
+      ]
+    },
+    {
+      "day": 31,
+      "title": "Date and Time (Part 2)",
+      "objectives": [
+        "Create `LocalDateTime` objects (`java.time`): combination of `LocalDate` and `LocalTime`, date + time without timezone, immutable, thread-safe, static factory methods",
+        "Use the `Period` class to represent a date-based amount of time in years, months, and days; create with `Period.of()` and `Period.between()`; apply to `LocalDate` for date arithmetic",
+        "Use the `Duration` class to represent a time-based amount in hours, minutes, seconds, and nanos; explain that `Duration` works with `LocalTime`/`LocalDateTime`/`Instant` but NOT with `LocalDate`",
+        "Format and parse date-time objects using `DateTimeFormatter` with custom patterns (`ofPattern`); use predefined formatters (`ISO_LOCAL_DATE`, `ISO_LOCAL_DATE_TIME`); explain that `DateTimeFormatter` replaces `SimpleDateFormat`",
+        "Convert between time zones using `ZonedDateTime.withZoneSameInstant()` and explain DST edge cases (e.g., spring-forward: 2:00 AM does not exist)"
+      ],
+      "watch_ref": [
+        "- Module 17 -- Date & Time -- second half (~44 min)"
+      ]
+    }
+  ],
+  "18": [
+    {
+      "day": 32,
+      "title": "Java I/O (Part 1)",
+      "objectives": [
+        "Explain Java IO fundamentals: stream-based input/output for file operations (create, write, read, delete); input streams for reading data, output streams for writing data",
+        "Use the `OutputStream` abstract class and its subclass `FileOutputStream` to write byte data to files",
+        "Use the `InputStream` abstract class and its subclass `FileInputStream` to read byte data from files; list key subclasses (`ByteArrayInputStream`, `ObjectInputStream`)",
+        "Distinguish between byte-based streams (`InputStream`/`OutputStream`) that transfer data in bytes and character-based streams introduced later"
+      ],
+      "watch_ref": [
+        "- Module 18 -- Java IO -- first third (~42 min)"
+      ]
+    },
+    {
+      "day": 33,
+      "title": "Java I/O (Part 2)",
+      "objectives": [
+        "Read from `.txt` files hands-on using `FileInputStream` and print contents to the console",
+        "Explain the `Writer` class: character-based output (vs byte-based), supports international characters (introduced in Java 1.1)",
+        "Explain the `Reader` class: character-based input, abstract with subclasses `BufferedReader`, `InputStreamReader`, `CharArrayReader`; use `read()` method overloads",
+        "Distinguish between byte streams (`InputStream`/`OutputStream` for raw bytes) and character streams (`Reader`/`Writer` for text with character encoding)"
+      ],
+      "watch_ref": [
+        "- Module 18 -- Java IO -- second third (~42 min)"
+      ]
+    },
+    {
+      "day": 34,
+      "title": "Java I/O (Part 3) + Thread Basics",
+      "objectives": [
+        "Copy a file using `FileReader`/`FileWriter` (character-based) and `FileInputStream`/`FileOutputStream` (byte-based)",
+        "Explain object serialization (converting an object to a byte stream for storage/transmission) and deserialization (recreating the object from the byte stream)",
+        "Use the `transient` keyword to exclude fields from serialization; state that transient fields get their default values on deserialization (e.g., `0` for `int`)",
+        "Explain what a thread is; create threads by extending `Thread` (override `run()`) and by implementing `Runnable` (pass to `Thread` constructor, call `start()`)",
+        "Distinguish process vs thread: processes have independent memory, threads share memory within a process; explain multithreading benefits",
+        "Explain `start()` (creates a new thread and calls `run()`) vs calling `run()` directly (runs in current thread, no parallelism); use `Thread.getState()` to monitor thread states (NEW, RUNNABLE)"
+      ],
+      "watch_ref": [
+        "- Module 18 -- Java IO -- final third (~41 min)"
+      ]
+    }
+  ],
+  "19": [
+    {
+      "day": 34,
+      "title": "Java I/O (Part 3) + Thread Basics",
+      "objectives": [
+        "Copy a file using `FileReader`/`FileWriter` (character-based) and `FileInputStream`/`FileOutputStream` (byte-based)",
+        "Explain object serialization (converting an object to a byte stream for storage/transmission) and deserialization (recreating the object from the byte stream)",
+        "Use the `transient` keyword to exclude fields from serialization; state that transient fields get their default values on deserialization (e.g., `0` for `int`)",
+        "Explain what a thread is; create threads by extending `Thread` (override `run()`) and by implementing `Runnable` (pass to `Thread` constructor, call `start()`)",
+        "Distinguish process vs thread: processes have independent memory, threads share memory within a process; explain multithreading benefits",
+        "Explain `start()` (creates a new thread and calls `run()`) vs calling `run()` directly (runs in current thread, no parallelism); use `Thread.getState()` to monitor thread states (NEW, RUNNABLE)"
+      ],
+      "watch_ref": [
+        "- Module 19 -- Overview of Threads (8 min)"
+      ]
+    }
+  ],
+  "20": [
+    {
+      "day": 34,
+      "title": "Java I/O (Part 3) + Thread Basics",
+      "objectives": [
+        "Copy a file using `FileReader`/`FileWriter` (character-based) and `FileInputStream`/`FileOutputStream` (byte-based)",
+        "Explain object serialization (converting an object to a byte stream for storage/transmission) and deserialization (recreating the object from the byte stream)",
+        "Use the `transient` keyword to exclude fields from serialization; state that transient fields get their default values on deserialization (e.g., `0` for `int`)",
+        "Explain what a thread is; create threads by extending `Thread` (override `run()`) and by implementing `Runnable` (pass to `Thread` constructor, call `start()`)",
+        "Distinguish process vs thread: processes have independent memory, threads share memory within a process; explain multithreading benefits",
+        "Explain `start()` (creates a new thread and calls `run()`) vs calling `run()` directly (runs in current thread, no parallelism); use `Thread.getState()` to monitor thread states (NEW, RUNNABLE)"
+      ],
+      "watch_ref": [
+        "- Module 20 -- Thread Creation and Management (13 min)"
+      ]
+    }
+  ],
+  "21": [
+    {
+      "day": 35,
+      "title": "Concurrency Core",
+      "objectives": [
+        "Explain synchronization: controlling access to shared resources so only one thread executes a critical section at a time; use the `synchronized` keyword on methods (counter example demonstrating thread interference and its fix)",
+        "Explain the `volatile` keyword: ensures a variable is immediately visible to all threads but does not guarantee atomicity",
+        "Use the Executor framework: create thread pools with `Executors.newFixedThreadPool()` and schedule tasks with `ScheduledExecutorService` (`newScheduledThreadPool`, delays, fixed intervals)",
+        "Use `ConcurrentHashMap` for thread-safe data handling without manual synchronization",
+        "Use `Callable` (returns a result, unlike `Runnable`) with `Future.get()` (blocks until result ready); use `AtomicInteger` for lock-free thread-safe counter operations",
+        "Coordinate threads with `Semaphore` (permits controlling how many threads access a resource); use `wait()`, `notify()`, `notifyAll()` for inter-thread communication; use `ReentrantLock` with `Condition` for fine-grained control"
+      ],
+      "watch_ref": [
+        "- Module 21 -- Synchronization and Concurrency Control (17 min)"
+      ]
+    }
+  ],
+  "22": [
+    {
+      "day": 35,
+      "title": "Concurrency Core",
+      "objectives": [
+        "Explain synchronization: controlling access to shared resources so only one thread executes a critical section at a time; use the `synchronized` keyword on methods (counter example demonstrating thread interference and its fix)",
+        "Explain the `volatile` keyword: ensures a variable is immediately visible to all threads but does not guarantee atomicity",
+        "Use the Executor framework: create thread pools with `Executors.newFixedThreadPool()` and schedule tasks with `ScheduledExecutorService` (`newScheduledThreadPool`, delays, fixed intervals)",
+        "Use `ConcurrentHashMap` for thread-safe data handling without manual synchronization",
+        "Use `Callable` (returns a result, unlike `Runnable`) with `Future.get()` (blocks until result ready); use `AtomicInteger` for lock-free thread-safe counter operations",
+        "Coordinate threads with `Semaphore` (permits controlling how many threads access a resource); use `wait()`, `notify()`, `notifyAll()` for inter-thread communication; use `ReentrantLock` with `Condition` for fine-grained control"
+      ],
+      "watch_ref": [
+        "- Module 22 -- High-level Concurrency APIs (49 min)"
+      ]
+    }
+  ],
+  "23": [
+    {
+      "day": 35,
+      "title": "Concurrency Core",
+      "objectives": [
+        "Explain synchronization: controlling access to shared resources so only one thread executes a critical section at a time; use the `synchronized` keyword on methods (counter example demonstrating thread interference and its fix)",
+        "Explain the `volatile` keyword: ensures a variable is immediately visible to all threads but does not guarantee atomicity",
+        "Use the Executor framework: create thread pools with `Executors.newFixedThreadPool()` and schedule tasks with `ScheduledExecutorService` (`newScheduledThreadPool`, delays, fixed intervals)",
+        "Use `ConcurrentHashMap` for thread-safe data handling without manual synchronization",
+        "Use `Callable` (returns a result, unlike `Runnable`) with `Future.get()` (blocks until result ready); use `AtomicInteger` for lock-free thread-safe counter operations",
+        "Coordinate threads with `Semaphore` (permits controlling how many threads access a resource); use `wait()`, `notify()`, `notifyAll()` for inter-thread communication; use `ReentrantLock` with `Condition` for fine-grained control"
+      ],
+      "watch_ref": [
+        "- Module 23 -- Thread Coordination (25 min)"
+      ]
+    }
+  ],
+  "24": [
+    {
+      "day": 36,
+      "title": "Concurrency Advanced",
+      "objectives": [
+        "Use `ReentrantLock` with explicit `lock()`/`unlock()` and explain fairness (granting locks in request order); use `ReentrantReadWriteLock` for concurrent read access",
+        "Use condition variables with `ReentrantLock` for thread signaling beyond `wait`/`notify`",
+        "Explain thread-safe collections and blocking queues for safe concurrent data access",
+        "Define thread contention (multiple threads competing for the same lock) and deadlocks (two or more threads waiting for each other indefinitely)",
+        "Explain thread safety through immutability: immutable objects are inherently thread-safe since their state cannot change after construction"
+      ],
+      "watch_ref": [
+        "- Module 24 -- Locks and Advanced Synchronization (36 min)"
+      ]
+    }
+  ],
+  "25": [
+    {
+      "day": 36,
+      "title": "Concurrency Advanced",
+      "objectives": [
+        "Use `ReentrantLock` with explicit `lock()`/`unlock()` and explain fairness (granting locks in request order); use `ReentrantReadWriteLock` for concurrent read access",
+        "Use condition variables with `ReentrantLock` for thread signaling beyond `wait`/`notify`",
+        "Explain thread-safe collections and blocking queues for safe concurrent data access",
+        "Define thread contention (multiple threads competing for the same lock) and deadlocks (two or more threads waiting for each other indefinitely)",
+        "Explain thread safety through immutability: immutable objects are inherently thread-safe since their state cannot change after construction"
+      ],
+      "watch_ref": [
+        "- Module 25 -- Concurrent Collections (14 min)"
+      ]
+    }
+  ],
+  "26": [
+    {
+      "day": 36,
+      "title": "Concurrency Advanced",
+      "objectives": [
+        "Use `ReentrantLock` with explicit `lock()`/`unlock()` and explain fairness (granting locks in request order); use `ReentrantReadWriteLock` for concurrent read access",
+        "Use condition variables with `ReentrantLock` for thread signaling beyond `wait`/`notify`",
+        "Explain thread-safe collections and blocking queues for safe concurrent data access",
+        "Define thread contention (multiple threads competing for the same lock) and deadlocks (two or more threads waiting for each other indefinitely)",
+        "Explain thread safety through immutability: immutable objects are inherently thread-safe since their state cannot change after construction"
+      ],
+      "watch_ref": [
+        "- Module 26 -- Performance and Scalability -- first half (~27 min)"
+      ]
+    },
+    {
+      "day": 37,
+      "title": "Virtual Threads + Performance",
+      "objectives": [
+        "Explain thread pool optimization: pool of reusable pre-instantiated threads with a task queue, reducing thread creation/destruction overhead for better performance and responsiveness",
+        "Use parallel streams (Java 8) with `ForkJoinPool` to split collection processing into chunks across multiple threads on multi-core CPUs",
+        "Describe the JVM's role in thread management and how thread scheduling works",
+        "Set and use thread priorities to influence scheduling order; explain daemon threads (background threads that do not prevent JVM shutdown)",
+        "Describe concurrency design patterns: thread-per-message (new thread per task), worker thread (thread pool pattern), and producer-consumer (coordinating producing and consuming threads)"
+      ],
+      "watch_ref": [
+        "- Module 26 -- Performance and Scalability -- second half (~26 min)"
+      ]
+    }
+  ],
+  "27": [
+    {
+      "day": 37,
+      "title": "Virtual Threads + Performance",
+      "objectives": [
+        "Explain thread pool optimization: pool of reusable pre-instantiated threads with a task queue, reducing thread creation/destruction overhead for better performance and responsiveness",
+        "Use parallel streams (Java 8) with `ForkJoinPool` to split collection processing into chunks across multiple threads on multi-core CPUs",
+        "Describe the JVM's role in thread management and how thread scheduling works",
+        "Set and use thread priorities to influence scheduling order; explain daemon threads (background threads that do not prevent JVM shutdown)",
+        "Describe concurrency design patterns: thread-per-message (new thread per task), worker thread (thread pool pattern), and producer-consumer (coordinating producing and consuming threads)"
+      ],
+      "watch_ref": [
+        "- Module 27 -- Java Virtual Machine and Threads (24 min)"
+      ]
+    }
+  ],
+  "28": [
+    {
+      "day": 37,
+      "title": "Virtual Threads + Performance",
+      "objectives": [
+        "Explain thread pool optimization: pool of reusable pre-instantiated threads with a task queue, reducing thread creation/destruction overhead for better performance and responsiveness",
+        "Use parallel streams (Java 8) with `ForkJoinPool` to split collection processing into chunks across multiple threads on multi-core CPUs",
+        "Describe the JVM's role in thread management and how thread scheduling works",
+        "Set and use thread priorities to influence scheduling order; explain daemon threads (background threads that do not prevent JVM shutdown)",
+        "Describe concurrency design patterns: thread-per-message (new thread per task), worker thread (thread pool pattern), and producer-consumer (coordinating producing and consuming threads)"
+      ],
+      "watch_ref": [
+        "- Module 28 -- Best Practices and Advanced Topics -- first half (~38 min)"
+      ]
+    },
+    {
+      "day": 38,
+      "title": "Advanced Topics + Modules/Packaging",
+      "objectives": [
+        "Handle exceptions in multithreaded code: explain that unhandled exceptions in a thread can terminate it silently; use `Thread.UncaughtExceptionHandler` for centralized handling; handle exceptions inside `Runnable`/`Callable`",
+        "Compare advanced locking mechanisms (`ReentrantLock`, `ReadWriteLock`, `StampedLock`) with `synchronized` and explain when each is appropriate",
+        "Build a multithreaded web server: handle HTTP requests with thread-per-request model, address concurrency challenges (shared resources, synchronization, race conditions), and design for scalability",
+        "Write `module-info.java` with `requires`, `exports`, `opens`, `provides`/`uses` directives; explain `requires transitive` and automatic modules for migration",
+        "Use CLI tools for modular applications: `javac` with `--module-source-path`, `java` with `--module-path` and `-m`, `jar` for modular/non-modular JARs, `jdeps` for dependency analysis, `jlink` for custom runtime images"
+      ],
+      "watch_ref": [
+        "- Module 28 -- Best Practices and Advanced Topics -- second half (~37 min)"
+      ]
+    }
+  ],
+  "29": [
+    {
+      "day": 38,
+      "title": "Advanced Topics + Modules/Packaging",
+      "objectives": [
+        "Handle exceptions in multithreaded code: explain that unhandled exceptions in a thread can terminate it silently; use `Thread.UncaughtExceptionHandler` for centralized handling; handle exceptions inside `Runnable`/`Callable`",
+        "Compare advanced locking mechanisms (`ReentrantLock`, `ReadWriteLock`, `StampedLock`) with `synchronized` and explain when each is appropriate",
+        "Build a multithreaded web server: handle HTTP requests with thread-per-request model, address concurrency challenges (shared resources, synchronization, race conditions), and design for scalability",
+        "Write `module-info.java` with `requires`, `exports`, `opens`, `provides`/`uses` directives; explain `requires transitive` and automatic modules for migration",
+        "Use CLI tools for modular applications: `javac` with `--module-source-path`, `java` with `--module-path` and `-m`, `jar` for modular/non-modular JARs, `jdeps` for dependency analysis, `jlink` for custom runtime images"
+      ],
+      "watch_ref": [
+        "- Module 29 -- Case Studies and Practical Scenarios -- first half (~35 min)"
+      ]
+    },
+    {
+      "day": 39,
+      "title": "Case Studies + Tools",
+      "objectives": [
+        "Implement a producer-consumer system: producer and consumer threads sharing a resource with proper coordination to avoid conflicts",
+        "Develop a console-based real-time chat system: multiple clients connected to a server, sending and receiving messages using threads",
+        "Debug multithreaded code: use `jstack` to capture thread dumps, detect deadlocks (e.g., inconsistent lock order with `ReentrantLock`), and fix them by enforcing consistent lock acquisition order; use VisualVM, IDE debugging, logging (Log4j2/SLF4J), and static analysis (FindBugs/SonarQube)",
+        "Unit test multithreaded code with JUnit 5: write a `ThreadSafeCounter` with `ReentrantLock`, test with `ExecutorService` (10 threads), `awaitTermination`, and `assertEquals`; apply isolation, mocking, timeouts, and stress testing approaches",
+        "Profile multithreaded applications with Java VisualVM: monitor thread states (running, waiting, blocked), CPU hotspots, memory allocation, and lock contention using a `BankAccount` synchronized example"
+      ],
+      "watch_ref": [
+        "- Module 29 -- Case Studies and Practical Scenarios -- second half (~35 min)"
+      ]
+    }
+  ],
+  "30": [
+    {
+      "day": 39,
+      "title": "Case Studies + Tools",
+      "objectives": [
+        "Implement a producer-consumer system: producer and consumer threads sharing a resource with proper coordination to avoid conflicts",
+        "Develop a console-based real-time chat system: multiple clients connected to a server, sending and receiving messages using threads",
+        "Debug multithreaded code: use `jstack` to capture thread dumps, detect deadlocks (e.g., inconsistent lock order with `ReentrantLock`), and fix them by enforcing consistent lock acquisition order; use VisualVM, IDE debugging, logging (Log4j2/SLF4J), and static analysis (FindBugs/SonarQube)",
+        "Unit test multithreaded code with JUnit 5: write a `ThreadSafeCounter` with `ReentrantLock`, test with `ExecutorService` (10 threads), `awaitTermination`, and `assertEquals`; apply isolation, mocking, timeouts, and stress testing approaches",
+        "Profile multithreaded applications with Java VisualVM: monitor thread states (running, waiting, blocked), CPU hotspots, memory allocation, and lock contention using a `BankAccount` synchronized example"
+      ],
+      "watch_ref": [
+        "- Module 30 -- Tools and Testing (40 min)"
+      ]
+    }
+  ],
+  "31": [
+    {
+      "day": 40,
+      "title": "Mock Exam #1",
+      "objectives": [
+        "Work through ~50 mock exam questions covering all 1Z0-830 topics: Java fundamentals/JVM, variable scope and shadowing, logical operators and short-circuiting, switch-case (duplicate labels = compile error), arrays (jagged, `IndexOutOfBoundsException`), for-each (loop variable is a copy)",
+        "Answer exam questions on OOP: method overloading (exact match vs widening vs varargs, ambiguous calls), record classes, abstract classes (constructor order), interfaces (default/static methods, multiple inheritance), sealed classes (`permits`, `final`/`sealed`/`non-sealed`), `instanceof` pattern matching",
+        "Answer exam questions on APIs: streams (`allMatch`/`anyMatch`/`noneMatch`/`findFirst`), `ZonedDateTime`, collections (`LinkedHashMap`), strings, garbage collection, lambdas (`var` in parameters), I/O (`FileReader`, try-with-resources), threads, exceptions",
+        "Score at least 68% (passing threshold), identify your top 3 weakest topic areas, and create a focused review plan for Days 41-42"
+      ],
+      "watch_ref": [
+        "- Module 31 -- Mock Exam walkthrough (1 h 26 min)"
+      ]
+    }
+  ],
+  "32": [
+    {
+      "day": 41,
+      "title": "Practice Exam + Weak Area Deep Dive",
+      "objectives": [
+        "Score at least 70% on a second full-length timed practice exam",
+        "For each incorrect answer, write a code snippet that proves why the correct answer is right",
+        "Demonstrate improvement in the weak areas identified on Day 40",
+        "Verify understanding of all Java 21-specific features that may appear on the exam"
+      ],
+      "watch_ref": [
+        "- Module 32 -- Practice Exam (HTML content)"
+      ]
+    }
+  ],
+  "33": [
+    {
+      "day": 41,
+      "title": "Practice Exam + Weak Area Deep Dive",
+      "objectives": [
+        "Score at least 70% on a second full-length timed practice exam",
+        "For each incorrect answer, write a code snippet that proves why the correct answer is right",
+        "Demonstrate improvement in the weak areas identified on Day 40",
+        "Verify understanding of all Java 21-specific features that may appear on the exam"
+      ],
+      "watch_ref": [
+        "- Module 33 -- Extra (HTML content)"
+      ]
+    }
+  ]
+}
